@@ -7,8 +7,8 @@ import ast.visitor.PsythonVisitor;
 
 public class LogicalExp extends Expression implements ValueHolder, TruthValueHolder {
     public String op;
-    public PrimitiveTruth lhs;
-    public PrimitiveTruth rhs;
+    public PrimitiveTruth lhs = null;
+    public PrimitiveTruth rhs = null;
 
     public LogicalExp(PrimitiveTruth lhs, PrimitiveTruth rhs, String op) {
         assert op == "and" || op == "or";
@@ -26,6 +26,8 @@ public class LogicalExp extends Expression implements ValueHolder, TruthValueHol
     public void accept(PsythonVisitor v) {
         v.visit(this);
         lhs.accept(v);
-        rhs.accept(v);
+        if (rhs != null){
+            rhs.accept(v);
+        }
     }
 }

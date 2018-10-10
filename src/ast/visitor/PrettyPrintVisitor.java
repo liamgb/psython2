@@ -18,7 +18,7 @@ public class PrettyPrintVisitor implements PsythonVisitor {
 
     @Override
     public void visit(ReturnCmp return_cmp) {
-
+        result.append("return: \n");
     }
 
     @Override
@@ -38,12 +38,12 @@ public class PrettyPrintVisitor implements PsythonVisitor {
 
     @Override
     public void visit(FunctionCallExp functionCallExp) {
-
+        result.append("Function Call:\n");
     }
 
     @Override
     public void visit(FunctionExp functionExp) {
-
+        result.append("Function:\n");
     }
 
     @Override
@@ -53,12 +53,12 @@ public class PrettyPrintVisitor implements PsythonVisitor {
 
     @Override
     public void visit(LogicalExp logicalExp) {
-
+        result.append(logicalExp.op + "\n");
     }
 
     @Override
     public void visit(PrintExp printExp) {
-
+        result.append("Print:\n");
     }
 
     @Override

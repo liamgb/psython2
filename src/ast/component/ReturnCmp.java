@@ -18,5 +18,6 @@ public class ReturnCmp implements Component{
     @Override
     public void accept(PsythonVisitor v) {
         v.visit(this);
+        arg.accept(v);
     }
 }
