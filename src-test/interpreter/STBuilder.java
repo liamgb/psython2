@@ -1,39 +1,28 @@
+package interpreter;
+
 import ast.expression.ExpressionList;
 import ast.visitor.PrettyPrintVisitor;
 import ast.visitor.SymbolTableBuildingVisitor;
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.junit.jupiter.api.Test;
 import parser.psythonASTLexer;
 import parser.psythonASTParser;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Main {
-//    public static void main(String[] args) {
-//        try {
-//            final ANTLRFileStream afs = new ANTLRFileStream(args[0]);
-//            final psythonASTLexer psyl = new psythonASTLexer(afs);
-//            final CommonTokenStream cts = new CommonTokenStream(psyl);
-//            final psythonASTParser psyp = new psythonASTParser(cts);
-//
-//            ExpressionList prg = psyp.program().result;
-//
-//            PrettyPrintVisitor pv = new PrettyPrintVisitor();
-//            prg.accept(pv);
-//            System.out.println(pv.result);
-//        } catch (final Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-    public static void main(String[] args) {
+
+public class STBuilder {
+
+    public static void testPass(final String filename, final int expected) {
         try {
-            final ANTLRFileStream afs = new ANTLRFileStream(args[0]);
+            final ANTLRFileStream afs = new ANTLRFileStream(filename);
             final psythonASTLexer psyl = new psythonASTLexer(afs);
             final CommonTokenStream cts = new CommonTokenStream(psyl);
             final psythonASTParser psyp = new psythonASTParser(cts);
 
             ExpressionList prg = psyp.program().result;
-            assertTrue(psyp.getNumberOfSyntaxErrors() == 0);
+            assertTrue(psyp.getNumberOfSyntaxErrors() == expected);
 
             SymbolTableBuildingVisitor stv = new SymbolTableBuildingVisitor();
             prg.accept(stv);
@@ -47,4 +36,30 @@ public class Main {
 //			assertTrue(e.getMessage(), false);
         }
     }
+
+    @Test
+    public void testProgram0() {
+        STBuilder.testPass("src-examples/test1.py", 0);
+    }
+
+    @Test
+    public void testProgram1() {
+        STBuilder.testPass("src-examples/test2.py", 0);
+    }
+
+    @Test
+    public void testProgram2() {
+        STBuilder.testPass("src-examples/test_func.py", 0);
+    }
+
+    @Test
+    public void testProgram3() {
+        STBuilder.testPass("src-examples/test_opts.py", 0);
+    }
+
+    @Test
+    public void testProgram8() {
+        STBuilder.testPass("src-examples/xample.py", 0);
+    }
+
 }

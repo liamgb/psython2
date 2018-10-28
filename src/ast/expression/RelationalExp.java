@@ -2,6 +2,7 @@ package ast.expression;
 
 import ast.component.*;
 import ast.visitor.PsythonVisitor;
+import cesk.ValueType;
 
 public class RelationalExp extends Expression implements ValueHolder, TruthValueHolder, PrimitiveTruth {
     public String op;
@@ -20,5 +21,10 @@ public class RelationalExp extends Expression implements ValueHolder, TruthValue
         v.visit(this);
         lhs.accept(v);
         rhs.accept(v);
+    }
+
+    @Override
+    public ValueType get_type() {
+        return ValueType.P_BOOL;
     }
 }

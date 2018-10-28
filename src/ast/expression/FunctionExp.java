@@ -1,6 +1,7 @@
 package ast.expression;
 
 import ast.component.ReturnCmp;
+import ast.component.Variable;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
 
@@ -15,7 +16,7 @@ function
     ;
 */
 
-public class FunctionExp extends Expression {
+public class FunctionExp extends Expression implements Variable {
     public IdentifierNode func_id;
     public List<IdentifierNode> func_args = new ArrayList<>();
     public ExpressionList func_body;
@@ -38,5 +39,10 @@ public class FunctionExp extends Expression {
         }
         func_body.accept(v);
         ret_cmp.accept(v);
+    }
+
+    @Override
+    public String get_name() {
+        return this.func_id.id_name;
     }
 }

@@ -1,2 +1,5 @@
+a = 11
+b = 12
+
 while False:
-    b = 13
+    b = b + 13

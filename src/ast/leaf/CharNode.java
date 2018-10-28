@@ -1,6 +1,7 @@
 package ast.leaf;
 
 import ast.visitor.PsythonVisitor;
+import cesk.ValueType;
 
 public class CharNode implements Literal {
     public char ch;
@@ -11,5 +12,10 @@ public class CharNode implements Literal {
     @Override
     public void accept(PsythonVisitor v) {
         v.visit(this);
+    }
+
+    @Override
+    public ValueType get_type() {
+        return ValueType.P_CHAR;
     }
 }

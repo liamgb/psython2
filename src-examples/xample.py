@@ -13,7 +13,6 @@ def func(a, b):
         while a > b:
             b = b + 1
             c = b * 2
-
         a = a + 1
     c = a + b
     return a
@@ -21,7 +20,7 @@ def func(a, b):
 
 a = 12
 b = 7
-c = 3
+c = func(a, b)
 
 while a >= b:
     b = b + a

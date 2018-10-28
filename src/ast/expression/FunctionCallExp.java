@@ -1,9 +1,11 @@
 package ast.expression;
 
 import ast.component.ValueHolder;
+import ast.component.Variable;
 import ast.leaf.Argument;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
+import cesk.ValueType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +16,7 @@ import java.util.List;
     ;
 */
 
-public class FunctionCallExp extends Expression implements ValueHolder {
+public class FunctionCallExp extends Expression implements ValueHolder, Variable {
     public IdentifierNode id;
     public List<Argument> arg_list;
 
@@ -31,5 +33,15 @@ public class FunctionCallExp extends Expression implements ValueHolder {
         for (Argument arg : arg_list){
             arg.accept(v);
         }
+    }
+
+    @Override
+    public ValueType get_type() {
+        return ValueType.P_UNKNOWN;
+    }
+
+    @Override
+    public String get_name() {
+        return this.id.id_name;
     }
 }

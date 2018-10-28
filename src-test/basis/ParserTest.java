@@ -44,4 +44,9 @@ public class ParserTest {
 		ParserTest.testPass("src-examples/xample.py", 0);
 	}
 
+	@Test
+	public void testProgram3() {
+		ParserTest.testPass("src-examples/test2.py", 0);
+	}
+
 }

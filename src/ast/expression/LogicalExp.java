@@ -4,6 +4,7 @@ import ast.component.PrimitiveTruth;
 import ast.component.TruthValueHolder;
 import ast.component.ValueHolder;
 import ast.visitor.PsythonVisitor;
+import cesk.ValueType;
 
 public class LogicalExp extends Expression implements ValueHolder, TruthValueHolder {
     public String op;
@@ -29,5 +30,10 @@ public class LogicalExp extends Expression implements ValueHolder, TruthValueHol
         if (rhs != null){
             rhs.accept(v);
         }
+    }
+
+    @Override
+    public ValueType get_type() {
+        return ValueType.P_BOOL;
     }
 }

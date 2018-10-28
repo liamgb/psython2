@@ -3,6 +3,9 @@ package ast.expression;
 import ast.component.Computable;
 import ast.component.ValueHolder;
 import ast.visitor.PsythonVisitor;
+import cesk.ValueType;
+
+import static cesk.ValueType.P_INT;
 
 /*
     arithmetic
@@ -28,4 +31,11 @@ public class ArithmeticExp extends Expression implements ValueHolder {
         lhs.accept(v);
         rhs.accept(v);
     }
+
+    @Override
+    public ValueType get_type() {
+        return P_INT;
+    }
+
+
 }
