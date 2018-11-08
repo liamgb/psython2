@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExpressionList {
-    List<Expression> exp_list = new ArrayList<>();
+    public List<Expression> exp_list = new ArrayList<>();
 
     public ExpressionList() {
     }

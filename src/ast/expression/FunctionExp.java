@@ -4,6 +4,8 @@ import ast.component.ReturnCmp;
 import ast.component.Variable;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Val;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +41,15 @@ public class FunctionExp extends Expression implements Variable {
         }
         func_body.accept(v);
         ret_cmp.accept(v);
+    }
+
+    @Override
+    public Val eval(State st) {
+        return null;
+    }
+
+    public Val eval_func(State st) {
+        return null;
     }
 
     @Override

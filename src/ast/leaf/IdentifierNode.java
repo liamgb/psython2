@@ -2,6 +2,9 @@ package ast.leaf;
 
 import ast.component.*;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Symbol;
+import cesk.Val;
 import cesk.ValueType;
 
 public class IdentifierNode implements Variable, Argument, Computable, ValueHolder, TruthValueHolder, PrimitiveTruth {
@@ -13,6 +16,15 @@ public class IdentifierNode implements Variable, Argument, Computable, ValueHold
     @Override
     public void accept(PsythonVisitor v) {
         v.visit(this);
+    }
+
+    @Override
+    public Val eval(State st) {
+        return st.environment.lookup(st.scope, id_name).v;
+    }
+
+    public Symbol lookup(State st) {
+        return st.environment.lookup(st.scope, id_name);
     }
 
     @Override

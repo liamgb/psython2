@@ -4,6 +4,8 @@ import ast.component.PrimitiveTruth;
 import ast.component.TruthValueHolder;
 import ast.component.ValueHolder;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Val;
 import cesk.ValueType;
 
 public class LogicalExp extends Expression implements ValueHolder, TruthValueHolder {
@@ -12,13 +14,13 @@ public class LogicalExp extends Expression implements ValueHolder, TruthValueHol
     public PrimitiveTruth rhs = null;
 
     public LogicalExp(PrimitiveTruth lhs, PrimitiveTruth rhs, String op) {
-        assert op == "and" || op == "or";
+        assert op.equals("and") || op.equals("or");
         this.lhs = lhs;
         this.rhs = rhs;
         this.op = op;
     }
     public LogicalExp(PrimitiveTruth operand, String operator) {
-        assert operator == "not";
+        assert operator.equals("not");
         this.op = operator;
         this.lhs = operand;
     }
@@ -29,6 +31,26 @@ public class LogicalExp extends Expression implements ValueHolder, TruthValueHol
         lhs.accept(v);
         if (rhs != null){
             rhs.accept(v);
+        }
+    }
+
+    @Override
+    public Val eval(State st) {
+        switch (this.op) {
+            case "and":
+                boolean lhs_val = lhs.eval(st).bool_v;
+                boolean rhs_val = rhs.eval(st).bool_v;
+                return new Val(lhs_val && rhs_val);
+            case "or":
+                lhs_val = lhs.eval(st).bool_v;
+                rhs_val = rhs.eval(st).bool_v;
+                return new Val(lhs_val || rhs_val);
+            case "not":
+                lhs_val = lhs.eval(st).bool_v;
+                return new Val(!lhs_val);
+            default:
+                assert false;
+                return null;
         }
     }
 

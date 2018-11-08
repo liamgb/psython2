@@ -130,7 +130,7 @@ logical returns [LogicalExp result = null]
 	;
 
 print returns [PrintExp result = null]
-    :	PRINT a=argument {
+    :	PRINT a=arglist {
         $result = new PrintExp($a.result);
     }
 	;
@@ -305,7 +305,7 @@ CHAR:  '\'' ( ESC_SEQ | ~('\''|'\\') ) '\''
 WS: [ \t]+ -> skip;
 
 COMMENT
-    :   ( '#' ~[\r\n]* '\r'? '\n') -> skip
+    :   '#' ~[\r\n]* -> skip
     ;
 
 fragment

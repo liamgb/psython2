@@ -3,9 +3,11 @@ package ast.leaf;
 import ast.component.PrimitiveTruth;
 import ast.component.TruthValueHolder;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Val;
 import cesk.ValueType;
 
-public class BoolNode  implements Literal, TruthValueHolder, PrimitiveTruth {
+public class BoolNode implements Literal, TruthValueHolder, PrimitiveTruth {
     public String boolval;
     public BoolNode( String boolval ) {
         this.boolval = boolval;
@@ -19,5 +21,10 @@ public class BoolNode  implements Literal, TruthValueHolder, PrimitiveTruth {
     @Override
     public ValueType get_type() {
         return ValueType.P_BOOL;
+    }
+
+    @Override
+    public Val eval(State st) {
+        return new Val(Boolean.valueOf(boolval.toLowerCase()));
     }
 }

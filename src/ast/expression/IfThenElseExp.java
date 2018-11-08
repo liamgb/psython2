@@ -3,6 +3,8 @@ package ast.expression;
 import ast.component.ConditionalCmp;
 import ast.component.TruthValueHolder;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Val;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,5 +36,30 @@ public class IfThenElseExp extends Expression {
         if (this.else_body != null) {
             this.else_body.accept(v);
         }
+    }
+
+    @Override
+    public Val eval(State st) {
+        if (if_statement.if_cond.eval(st).bool_v) {
+            for (Expression exp : if_statement.if_body.exp_list) {
+                exp.eval(st);
+            }
+            return null;
+        }
+        for (ConditionalCmp cmp : elif_statements) {
+            if (cmp.if_cond.eval(st).bool_v) {
+                for (Expression exp : cmp.if_body.exp_list) {
+                    exp.eval(st);
+                }
+                return null;
+            }
+        }
+        if (else_body != null) {
+            for (Expression exp : else_body.exp_list) {
+                exp.eval(st);
+            }
+            return null;
+        }
+        return null;
     }
 }

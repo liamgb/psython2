@@ -881,10 +881,10 @@ public class psythonASTParser extends Parser {
 
 	public static class PrintContext extends ParserRuleContext {
 		public PrintExp result = null;
-		public ArgumentContext a;
+		public ArglistContext a;
 		public TerminalNode PRINT() { return getToken(psythonASTParser.PRINT, 0); }
-		public ArgumentContext argument() {
-			return getRuleContext(ArgumentContext.class,0);
+		public ArglistContext arglist() {
+			return getRuleContext(ArglistContext.class,0);
 		}
 		public PrintContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -914,7 +914,7 @@ public class psythonASTParser extends Parser {
 			setState(139);
 			match(PRINT);
 			setState(140);
-			((PrintContext)_localctx).a = argument();
+			((PrintContext)_localctx).a = arglist();
 
 			        ((PrintContext)_localctx).result =  new PrintExp(((PrintContext)_localctx).a.result);
 			    
@@ -1508,8 +1508,8 @@ public class psythonASTParser extends Parser {
 		try {
 			setState(232);
 			_errHandler.sync(this);
-			switch (_input.LA(1)) {
-			case T__4:
+			switch ( getInterpreter().adaptivePredict(_input,10,_ctx) ) {
+			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(223);
@@ -1521,11 +1521,7 @@ public class psythonASTParser extends Parser {
 				    
 				}
 				break;
-			case BOOL:
-			case ID:
-			case INT:
-			case STRING:
-			case CHAR:
+			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(227);
@@ -1538,13 +1534,11 @@ public class psythonASTParser extends Parser {
 					
 				}
 				break;
-			case T__1:
+			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
 				}
 				break;
-			default:
-				throw new NoViableAltException(this);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1865,7 +1859,7 @@ public class psythonASTParser extends Parser {
 		"\2\u0083\u0084\t\2\2\2\u0084\u0085\5&\24\2\u0085\u0086\b\13\1\2\u0086"+
 		"\u008c\3\2\2\2\u0087\u0088\7\26\2\2\u0088\u0089\5&\24\2\u0089\u008a\b"+
 		"\13\1\2\u008a\u008c\3\2\2\2\u008b\u0082\3\2\2\2\u008b\u0087\3\2\2\2\u008c"+
-		"\25\3\2\2\2\u008d\u008e\7\21\2\2\u008e\u008f\5 \21\2\u008f\u0090\b\f\1"+
+		"\25\3\2\2\2\u008d\u008e\7\21\2\2\u008e\u008f\5$\23\2\u008f\u0090\b\f\1"+
 		"\2\u0090\27\3\2\2\2\u0091\u0092\7\13\2\2\u0092\u0093\5(\25\2\u0093\u0094"+
 		"\7\5\2\2\u0094\u0095\7\36\2\2\u0095\u0096\5\4\3\2\u0096\u0097\7\37\2\2"+
 		"\u0097\u00a2\b\r\1\2\u0098\u0099\7\f\2\2\u0099\u009a\5(\25\2\u009a\u009b"+

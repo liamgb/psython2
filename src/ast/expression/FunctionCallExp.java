@@ -5,6 +5,8 @@ import ast.component.Variable;
 import ast.leaf.Argument;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Val;
 import cesk.ValueType;
 
 import java.util.ArrayList;
@@ -33,6 +35,12 @@ public class FunctionCallExp extends Expression implements ValueHolder, Variable
         for (Argument arg : arg_list){
             arg.accept(v);
         }
+    }
+
+    @Override
+    public Val eval(State st) {
+
+        return null;
     }
 
     @Override

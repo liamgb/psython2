@@ -2,8 +2,9 @@ package ast.expression;
 
 import ast.component.Computable;
 import ast.component.ValueHolder;
+import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
-import cesk.ValueType;
+import cesk.*;
 
 import static cesk.ValueType.P_INT;
 
@@ -30,6 +31,25 @@ public class ArithmeticExp extends Expression implements ValueHolder {
         v.visit(this);
         lhs.accept(v);
         rhs.accept(v);
+    }
+
+    @Override
+    public Val eval(State st) {
+        int lhs_val = lhs.eval(st).int_v;
+        int rhs_val = rhs.eval(st).int_v;
+        switch (this.op) {
+            case "+":
+                return new Val(lhs_val + rhs_val);
+            case "-":
+                return new Val(lhs_val - rhs_val);
+            case "*":
+                return new Val(lhs_val * rhs_val);
+            case "/":
+                return new Val(lhs_val / rhs_val);
+            default:
+                assert false;
+                return null;
+        }
     }
 
     @Override

@@ -1,6 +1,9 @@
 package ast.expression;
 
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.SymbolTable;
+import cesk.Val;
 
 /*
     expression
@@ -20,4 +23,6 @@ public abstract class Expression {
     public ExpressionList block = null;
 
     public abstract void accept(PsythonVisitor v);
+
+    public abstract Val eval(State st);
 }

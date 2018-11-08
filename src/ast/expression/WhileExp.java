@@ -2,6 +2,8 @@ package ast.expression;
 
 import ast.component.TruthValueHolder;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Val;
 
 public class WhileExp extends Expression {
     public TruthValueHolder while_cond;
@@ -17,5 +19,15 @@ public class WhileExp extends Expression {
         v.visit(this);
         while_cond.accept(v);
         while_body.accept(v);
+    }
+
+    @Override
+    public Val eval(State st) {
+        while(while_cond.eval(st).bool_v) {
+            for (Expression exp : while_body.exp_list){
+                exp.eval(st);
+            }
+        }
+        return null;
     }
 }

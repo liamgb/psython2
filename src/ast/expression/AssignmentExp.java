@@ -3,6 +3,9 @@ package ast.expression;
 import ast.component.ValueHolder;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Symbol;
+import cesk.Val;
 
 /*
     assignment
@@ -24,5 +27,13 @@ public class AssignmentExp extends Expression{
         v.visit(this);
         lhs.accept(v);
         rhs.accept(v);
+    }
+
+    @Override
+    public Val eval(State st) {
+        Symbol lhs_sym = lhs.lookup(st);
+        Val res = rhs.eval(st);
+        lhs_sym.v = res;
+        return null;
     }
 }

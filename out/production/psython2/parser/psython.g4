@@ -86,7 +86,7 @@ logical
 	|	NOT (ID | BOOL | relational)
 	;
 
-print	:	PRINT argument
+print	:	PRINT arglist
 	;
 
 if_then_else

@@ -6,7 +6,7 @@ import ast.leaf.IdentifierNode;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class SymbolTable {
+public class SymbolTable implements Cloneable{
     Map<String, Symbol> tree = new TreeMap<>();
 
     public SymbolTable(){}
@@ -46,24 +46,22 @@ public class SymbolTable {
             return this.tree.get(name);
         }
         else {
-            return this.tree.get(scope).anatomy.get(name);
+            if (this.tree.get(scope).anatomy.get(name) != null) {
+                return this.tree.get(scope).anatomy.get(name);
+            }
+            else {
+                return this.tree.get(name);
+            }
         }
-//        Symbol sym = this.tree.get(name);
-//        if (sym == null) {
-//            for (Symbol tree_sym: this.tree.values()) {
-//                if (tree_sym.anatomy != null) {
-//                    sym = tree_sym.anatomy.get(name);
-//                }
-//                if (sym != null) {
-//                    break;
-//                }
-//            }
-//        }
-//        return sym;
     }
 
     @Override
     public String toString(){
         return tree.toString();
+    }
+
+    public Symbol clone() throws CloneNotSupportedException
+    {
+        return (Symbol) super.clone();
     }
 }

@@ -2,6 +2,8 @@ package ast.leaf;
 
 import ast.component.Computable;
 import ast.visitor.PsythonVisitor;
+import cesk.State;
+import cesk.Val;
 import cesk.ValueType;
 
 public class IntNode implements Literal, Computable {
@@ -18,5 +20,10 @@ public class IntNode implements Literal, Computable {
     @Override
     public ValueType get_type() {
         return ValueType.P_INT;
+    }
+
+    @Override
+    public Val eval(State st) {
+        return new Val(Integer.valueOf(str));
     }
 }
