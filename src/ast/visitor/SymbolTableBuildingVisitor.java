@@ -35,10 +35,10 @@ public class SymbolTableBuildingVisitor implements PsythonVisitor{
 
     @Override
     public void visit(ArithmeticExp arithmetic_exp) {
-        if (!is_defined(arithmetic_exp.lhs) || !is_defined(arithmetic_exp.rhs)) {
-            System.out.println("Variable undefined before used");
-            assert false;
-        }
+//        if (!is_defined(arithmetic_exp.lhs) || !is_defined(arithmetic_exp.rhs)) {
+//            System.out.println("Variable undefined before used");
+//            assert false;
+//        }
 
         Computable lhs = arithmetic_exp.lhs;
         Computable rhs = arithmetic_exp.rhs;
@@ -76,7 +76,9 @@ public class SymbolTableBuildingVisitor implements PsythonVisitor{
             }
             else {
                 if (!((Variable) assignmentExp.rhs).get_name().equals(this.scope_name)){
-                    System.out.println(((Variable) assignmentExp.rhs).get_name() + " is used before defined.");
+                    System.out.println(
+                            "Variable \"" + ((Variable) assignmentExp.rhs).get_name() + "\" is used before defined."
+                    );
                     assert false;
                 }
             }
@@ -182,10 +184,10 @@ public class SymbolTableBuildingVisitor implements PsythonVisitor{
 
     @Override
     public void visit(LogicalExp logicalExp) {
-        if (!is_defined(logicalExp.lhs) || !is_defined(logicalExp.rhs)) {
-            System.out.println("Variable undefined before used");
-            assert false;
-        }
+//        if (!is_defined(logicalExp.lhs) || !is_defined(logicalExp.rhs)) {
+//            System.out.println("Variable undefined before used");
+//            assert false;
+//        }
 
         PrimitiveTruth lhs = logicalExp.lhs;
         PrimitiveTruth rhs = logicalExp.rhs;
@@ -209,10 +211,10 @@ public class SymbolTableBuildingVisitor implements PsythonVisitor{
 
     @Override
     public void visit(RelationalExp relationalExp) {
-        if (!is_defined(relationalExp.lhs) || !is_defined(relationalExp.rhs)) {
-            System.out.println("Variable undefined before used");
-            assert false;
-        }
+//        if (!is_defined(relationalExp.lhs) || !is_defined(relationalExp.rhs)) {
+//            System.out.println("Variable undefined before used");
+//            assert false;
+//        }
 
         Computable lhs = relationalExp.lhs;
         Computable rhs = relationalExp.rhs;

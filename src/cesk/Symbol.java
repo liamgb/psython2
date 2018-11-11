@@ -2,7 +2,10 @@ package cesk;
 
 import ast.component.Variable;
 
+import java.util.ArrayList;
 import java.util.Map;
+import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 public class Symbol implements Cloneable{
     public Map<String, Symbol> anatomy = null;
@@ -31,8 +34,21 @@ public class Symbol implements Cloneable{
         }
     }
 
+    @Override
     public Symbol clone() throws CloneNotSupportedException
     {
-        return (Symbol) super.clone();
+        Symbol sym = (Symbol) super.clone();
+
+        if (this.anatomy != null) {
+            sym.anatomy = new TreeMap<>();
+            for (Map.Entry<String, Symbol> entry: this.anatomy.entrySet()) {
+                sym.anatomy.put(entry.getKey(), entry.getValue().clone());
+            }
+        }
+        if (this.v != null) {
+            sym.v = v.clone();
+        }
+
+        return sym;
     }
 }

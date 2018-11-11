@@ -39,8 +39,23 @@ public class FunctionCallExp extends Expression implements ValueHolder, Variable
 
     @Override
     public Val eval(State st) {
+        // push new frame
+        st.interrupt(this, this.get_name(), this.arg_list);
 
-        return null;
+        // eval function
+        while(true) {
+            Expression exp = st.next();
+            if (exp != null)
+                exp.eval(st);
+            else
+                break;
+        }
+        FunctionExp func_def = (FunctionExp) st.environment.lookup(null, this.get_name()).var;
+        Val result = func_def.ret_cmp.eval(st);
+
+        // pop old frame and cont.
+        st.kont();
+        return result;
     }
 
     @Override

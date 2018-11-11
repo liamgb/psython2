@@ -60,8 +60,25 @@ public class SymbolTable implements Cloneable{
         return tree.toString();
     }
 
-    public Symbol clone() throws CloneNotSupportedException
+    public SymbolTable clone(String scope) throws CloneNotSupportedException
     {
-        return (Symbol) super.clone();
+        SymbolTable st = (SymbolTable) super.clone();
+        st.tree = new TreeMap<>();
+        for (Map.Entry<String, Symbol> entry: this.tree.entrySet()) {
+            st.tree.put(entry.getKey(), entry.getValue());
+        }
+
+        st.tree.put(scope, this.tree.get(scope).clone());
+        return st;
+    }
+
+    public boolean check_undefined() {
+        for (Map.Entry<String, Symbol> ent : this.tree.entrySet()) {
+            if (ent.getValue().vt == ValueType.P_UNKNOWN) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

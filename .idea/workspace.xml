@@ -2,78 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b89ddb79-7221-4e78-9292-05df6ea94f8e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src-test/interpreter/Simulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/visitor/InterpretVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cesk/Val.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-examples/test_sim3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-examples/test_sim4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/Computable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/Computable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ConditionalCmp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/ConditionalCmp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/PrimitiveTruth.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/PrimitiveTruth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/TruthValueHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/TruthValueHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ValueHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/ValueHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/ArithmeticExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/ArithmeticExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ReturnCmp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/ReturnCmp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/AssignmentExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/AssignmentExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/Expression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/ExpressionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/ExpressionList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionCallExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionCallExp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/IfThenElseExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/IfThenElseExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/LogicalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/LogicalExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/PrintExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/PrintExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/RelationalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/RelationalExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/WhileExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/WhileExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Argument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Argument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/BoolNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/BoolNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/CharNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/CharNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IdentifierNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IdentifierNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IntNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IntNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Literal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Literal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/StringNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/StringNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/InterpretVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/SymbolTableBuildingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/visitor/SymbolTableBuildingVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/State.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Symbol.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/SymbolTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Val$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Val$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Val.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Val.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/ValueType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/ValueType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psython.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psython.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LiteralContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LiteralContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Primitive_truthContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Primitive_truthContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$PrintContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Truth_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Truth_valContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/Computable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/Computable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/PrimitiveTruth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/PrimitiveTruth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/TruthValueHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/TruthValueHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/ValueHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/ValueHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/Variable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/interpreter/Simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/interpreter/Simulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-test/interpreter/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-test/interpreter/Simulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/ExpressionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/ExpressionList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/PrintExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/PrintExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/WhileExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/WhileExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/Argument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/Argument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/CharNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/CharNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/IntNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/IntNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/Literal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/Literal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/StringNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/StringNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/visitor/InterpretVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/Symbol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cesk/Val.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/Val.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/ValueType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/ValueType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/psython.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/psython.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/psythonAST.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/psythonAST.g4" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,11 +42,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cesk/State.java">
+      <file leaf-file-name="Val.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cesk/Val.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+            <state relative-caret-position="136">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Simulator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2034#2035#0" expanded="true" />
+                <element signature="e#2100#2101#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,11 +80,20 @@
       <file leaf-file-name="Symbol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cesk/Symbol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="40" />
+            <state relative-caret-position="867">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValueType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cesk/ValueType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -112,8 +101,8 @@
       <file leaf-file-name="SymbolTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cesk/SymbolTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-446">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="141">
+              <caret line="74" column="36" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,28 +110,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
+      <file leaf-file-name="SymbolTableBuildingVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="313">
+              <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FunctionExp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionExp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,8 +125,8 @@
       <file leaf-file-name="FunctionCallExp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="277">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -183,6 +157,7 @@
       <find>retur</find>
       <find>this.result</find>
       <find>function</find>
+      <find>result.insert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,13 +175,10 @@
         <option value="$PROJECT_DIR$/src/ast/component/ComparableCmp.java" />
         <option value="$PROJECT_DIR$/src-test/basis/ASTParserTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" />
         <option value="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java" />
         <option value="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuilder.java" />
         <option value="$PROJECT_DIR$/src-test/interpreter/STBuilder.java" />
         <option value="$PROJECT_DIR$/src-test/basis/ParserTest.java" />
-        <option value="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/cesk/Value.java" />
         <option value="$PROJECT_DIR$/src/ast/component/Value.java" />
         <option value="$PROJECT_DIR$/src/ast/component/Variable.java" />
@@ -221,8 +193,6 @@
         <option value="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" />
         <option value="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" />
-        <option value="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" />
-        <option value="$PROJECT_DIR$/src/cesk/ValueType.java" />
         <option value="$PROJECT_DIR$/src/ast/leaf/Argument.java" />
         <option value="$PROJECT_DIR$/src/ast/component/PrimitiveTruth.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" />
@@ -231,17 +201,22 @@
         <option value="$PROJECT_DIR$/src/ast/expression/WhileExp.java" />
         <option value="$PROJECT_DIR$/src/parser/psython.g4" />
         <option value="$PROJECT_DIR$/src/ast/expression/PrintExp.java" />
-        <option value="$PROJECT_DIR$/src/cesk/Val.java" />
         <option value="$PROJECT_DIR$/src/ast/leaf/StringNode.java" />
         <option value="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" />
         <option value="$PROJECT_DIR$/src/parser/psythonAST.g4" />
-        <option value="$PROJECT_DIR$/src-test/interpreter/Simulator.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" />
+        <option value="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" />
-        <option value="$PROJECT_DIR$/src/cesk/Symbol.java" />
-        <option value="$PROJECT_DIR$/src/cesk/SymbolTable.java" />
         <option value="$PROJECT_DIR$/src/cesk/State.java" />
+        <option value="$PROJECT_DIR$/src/cesk/Symbol.java" />
+        <option value="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" />
+        <option value="$PROJECT_DIR$/src/cesk/ValueType.java" />
+        <option value="$PROJECT_DIR$/src/cesk/Val.java" />
+        <option value="$PROJECT_DIR$/src/cesk/SymbolTable.java" />
+        <option value="$PROJECT_DIR$/src-test/interpreter/Simulator.java" />
+        <option value="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -309,13 +284,14 @@
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cesk" type="462c0819:PsiDirectoryNode" />
+              <item name="ast" type="462c0819:PsiDirectoryNode" />
+              <item name="visitor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="cesk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
@@ -376,78 +352,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Simulator.testProgram1">
-    <configuration default="true" type="Application" factoryName="Application">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="psython2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ParserTest.testProgram2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="psython2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="basis" />
-      <option name="MAIN_CLASS_NAME" value="basis.ParserTest" />
-      <option name="METHOD_NAME" value="testProgram2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="STBuilder.testProgram3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="psython2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interpreter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="interpreter" />
-      <option name="MAIN_CLASS_NAME" value="interpreter.STBuilder" />
-      <option name="METHOD_NAME" value="testProgram3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="STBuilder.testProgram8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="psython2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interpreter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="interpreter" />
-      <option name="MAIN_CLASS_NAME" value="interpreter.STBuilder" />
-      <option name="METHOD_NAME" value="testProgram8" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="Simulator.testProgram0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="psython2" />
@@ -485,6 +397,52 @@
       <option name="PACKAGE_NAME" value="interpreter" />
       <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
       <option name="METHOD_NAME" value="testProgram1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Simulator.testProgram2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="psython2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="interpreter" />
+      <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
+      <option name="METHOD_NAME" value="testProgram2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Simulator.testProgram3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="psython2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="interpreter" />
+      <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
+      <option name="METHOD_NAME" value="testProgram3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -544,19 +502,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.STBuilder.testProgram3" />
-      <item itemvalue="JUnit.STBuilder.testProgram8" />
-      <item itemvalue="JUnit.ParserTest.testProgram2" />
       <item itemvalue="JUnit.Simulator.testProgram0" />
       <item itemvalue="JUnit.Simulator.testProgram1" />
+      <item itemvalue="JUnit.Simulator.testProgram2" />
+      <item itemvalue="JUnit.Simulator.testProgram3" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Simulator.testProgram3" />
+        <item itemvalue="JUnit.Simulator.testProgram2" />
         <item itemvalue="JUnit.Simulator.testProgram1" />
         <item itemvalue="JUnit.Simulator.testProgram0" />
-        <item itemvalue="JUnit.STBuilder.testProgram8" />
-        <item itemvalue="JUnit.ParserTest.testProgram2" />
-        <item itemvalue="JUnit.STBuilder.testProgram3" />
       </list>
     </recent_temporary>
   </component>
@@ -578,44 +536,44 @@
       <workItem from="1540008384609" duration="21151000" />
       <workItem from="1540673784805" duration="17097000" />
       <workItem from="1541271230681" duration="5575000" />
-      <workItem from="1541655619056" duration="20158000" />
+      <workItem from="1541655619056" duration="42627000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 13m 27s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 26m 43s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 14m 02s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 27m 26s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 14m 11s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 44m 58s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 15m 11s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 48m 20s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 15m 32s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 11m 12s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 15m 43s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 11m 29s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 17m 56s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 12m 23s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 18m 19s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 25m 08s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 18m 30s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 25m 23s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram1 - 2018.11.08 at 14h 19m 14s.xml">
-      <configuration name="Simulator.testProgram1" configurationId="JUnit" />
+    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 26m 02s.xml">
+      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103463000" />
+    <option name="totallyTimeSpent" value="125932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-7" width="1229" height="735" extended-state="6" />
@@ -633,14 +591,14 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38906753" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46623793" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329582" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5080386" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33279744" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24938272" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
@@ -662,23 +620,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="66" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>attr.vt</expression-string>
+        <expression-string>lhs.lookup(st)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.lookup(scope, name).vt</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(assignmentExp.lhs).get_name()</expression-string>
+        <expression-string>st.environment.lookup(st.scope, id_name).v</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -688,40 +641,38 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((Variable) assignmentExp.rhs).get_name() != this.scope_name</expression-string>
+        <expression-string>entry.getValue()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.lookup(name).vt</expression-string>
+        <expression-string>st.tree.get(scope)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.lookup(name).vt == ValueType.P_UNKNOWN</expression-string>
+        <expression-string>st.tree.get(scope).anatomy</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>op.equals(&quot;+&quot;)</expression-string>
+        <expression-string>this.tree.get(scope).anatomy.get(name)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>op == &quot;+&quot;</expression-string>
+        <expression-string>func_call.arg_list.get(i)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arg_v</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ast/component/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/parser/psythonParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -811,32 +762,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cesk/Value.java" />
-    <entry file="file://$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#visit#0;class#SymbolTableBuildingVisitor#0" />
-            <element signature="method#visit#5;class#SymbolTableBuildingVisitor#0" />
-            <element signature="method#visit#6;class#SymbolTableBuildingVisitor#0" />
-            <element signature="method#visit#8;class#SymbolTableBuildingVisitor#0" />
-            <element signature="method#visit#10;class#SymbolTableBuildingVisitor#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src-test/interpreter/STBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -846,13 +772,6 @@
             <element signature="e#1439#1440#0" expanded="true" />
             <element signature="e#1501#1502#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -880,16 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/visitor/InterpretVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/leaf/Literal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -897,52 +806,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/ReturnCmp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/ValueType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/leaf/CharNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/Argument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/AssignmentExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1030,13 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/Val.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/component/TruthValueHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1064,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/psythonAST.g4">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -1078,40 +931,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionExp.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/component/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/visitor/InterpretVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Cloneable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cesk/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="57" />
+          <folding>
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/leaf/Argument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/AssignmentExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/component/ReturnCmp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="277">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cesk/ValueType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cesk/Symbol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="867">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1120,18 +1048,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cesk/SymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="141">
+          <caret line="74" column="36" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/State.java">
+    <entry file="file://$PROJECT_DIR$/src/cesk/Val.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2034#2035#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

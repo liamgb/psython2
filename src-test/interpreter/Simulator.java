@@ -30,6 +30,12 @@ public class Simulator {
             stv = new SymbolTableBuildingVisitor(stv.result);
             prg.accept(stv);
 
+            if (stv.result.check_undefined()) {
+                System.out.println("Exist defined variables:");
+                System.out.println(stv.result);
+                assert false;
+            }
+
             // Simulate
             State state = new State(stv.result, prg);
             while(true) {
@@ -56,6 +62,16 @@ public class Simulator {
     @Test
     public void testProgram1() {
         Simulator.testPass("src-examples/test_sim2.py", 0);
+    }
+
+    @Test
+    public void testProgram2() {
+        Simulator.testPass("src-examples/test_sim3.py", 0);
+    }
+
+    @Test
+    public void testProgram3() {
+        Simulator.testPass("src-examples/test_sim4.py", 0);
     }
 
 }

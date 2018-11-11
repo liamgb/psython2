@@ -31,9 +31,8 @@ public class AssignmentExp extends Expression{
 
     @Override
     public Val eval(State st) {
-        Symbol lhs_sym = lhs.lookup(st);
         Val res = rhs.eval(st);
-        lhs_sym.v = res;
+        lhs.lookup(st).v = res;
         return null;
     }
 }
