@@ -1,15 +1,10 @@
 package modelchecking;
 
-import ast.expression.RelationalExp;
-import ast.leaf.BoolNode;
+
 import ast.leaf.IdentifierNode;
-import ast.leaf.IntNode;
-import cesk.State;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class PropertyAutomaton {
     public static PropertyAutomaton singleton = null;

@@ -1,17 +1,9 @@
-import ast.expression.Expression;
-import ast.expression.ExpressionList;
-import ast.visitor.SymbolTableVisitor;
+
 import cesk.State;
 import cesk.SymbolTable;
 import modelchecking.DFS;
 import modelchecking.ModelState;
-import org.antlr.v4.runtime.ANTLRFileStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import parser.psythonASTLexer;
-import parser.psythonASTParser;
 import utility.Builder;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Main {
     public static void main(String[] args) {

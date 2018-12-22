@@ -2,189 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b89ddb79-7221-4e78-9292-05df6ea94f8e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/AtomicExe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FlowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FlowType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FunReturn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FuncAssign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FuncDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/ImperativeProg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/RandAssign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/SideEffect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/atomic/SimpleAssign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/expression/NextRandExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/expression/SeedRandExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/expression/TailExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/visitor/AtomicVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/visitor/NumberingVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/Evaluable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/Literal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/PrimitiveTruth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/TruthValueHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/Variable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper/Generator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelchecking/DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelchecking/ModelState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelchecking/PropertyState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelchecking/Transition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/psython2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/psython2_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psython.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psython.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonAST.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonAST.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/parser/psythonVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/Computable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ConditionalCmp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/ConditionalCmp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/PrimitiveTruth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ReturnCmp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/ReturnCmp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/TruthValueHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ValueHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/Variable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/ArithmeticExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/ArithmeticExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/AssignmentExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/AssignmentExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/Expression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/ExpressionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/ExpressionList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionCallExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionCallExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/IfThenElseExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/IfThenElseExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/LogicalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/LogicalExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/PrintExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/PrintExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/RelationalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/RelationalExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/WhileExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/WhileExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Argument.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/BoolNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/BoolNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/CharNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/CharNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IdentifierNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IdentifierNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IntNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IntNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Literal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/StringNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/StringNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PrettyPrintVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PrettyPrintVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PsythonVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PsythonVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/SymbolTableBuildingVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Symbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/SymbolTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Val$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Val$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Val.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Val.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/interpreter/STBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/interpreter/STBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/interpreter/Simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/interpreter/Simulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psython.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psython.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psython.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psython.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArglistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArglistContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArgumentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArgumentContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArithmeticContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArithmeticContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$AssignmentContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ComputableContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ComputableContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExplistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExplistContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$FunctionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Function_callContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Function_callContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$IdlistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$IdlistContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$If_then_elseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$If_then_elseContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LiteralContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LiteralContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LogicalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LogicalContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Primitive_truthContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Primitive_truthContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$PrintContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ProgramContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$RelationalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$RelationalContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Return_cmpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Return_cmpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Truth_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Truth_valContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Value_holderContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Value_holderContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$While_expContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$While_expContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArglistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArglistContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArgumentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArgumentContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArithmeticContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArithmeticContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$AssignmentContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExplistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExplistContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$FunctionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Function_callContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Function_callContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$IdlistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$IdlistContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$If_then_elseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$If_then_elseContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LiteralContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LiteralContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LogicalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LogicalContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$PrintContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ProgramContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$RelationalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$RelationalContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Return_cmpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Return_cmpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Truth_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Truth_valContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$While_expContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$While_expContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/modelchecking/ModelState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/modelchecking/ModelState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/modelchecking/PropertyAutomaton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/modelchecking/PropertyAutomaton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/psython2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/psython2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-examples/test_sim2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/test_sim2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-examples/test_sim3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/test_sim3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-examples/test_sim4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/test_sim4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-examples/xample.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/xample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-test/interpreter/STBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-test/interpreter/STBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-test/interpreter/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-test/interpreter/Simulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/Computable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/wrapper/Computable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/PrimitiveTruth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/TruthValueHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/ValueHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/wrapper/ValueHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/component/Variable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/ExpressionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/ExpressionList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/PrintExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/PrintExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/expression/WhileExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/WhileExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/Argument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/wrapper/Argument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/CharNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/CharNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/IntNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/IntNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/Literal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/leaf/StringNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/StringNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/visitor/PsythonVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/PsythonVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/SymbolTableVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cesk/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cesk/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/Symbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cesk/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/SymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cesk/Val.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/Val.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/psython.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/psython.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/psythonAST.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/psythonAST.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelchecking/ModelState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelchecking/ModelState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -200,19 +27,10 @@
         <entry file="file://$PROJECT_DIR$/src/modelchecking/DFS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
-              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogicalExp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ast/expression/LogicalExp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -238,8 +56,11 @@
       <file leaf-file-name="ModelState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modelchecking/ModelState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="136">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -253,11 +74,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Simulator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -265,8 +98,29 @@
       <file leaf-file-name="PropertyAutomaton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+            <state relative-caret-position="217">
+              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="psython2.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/psython2.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="psython2_jar.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/artifacts/psython2_jar.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -313,8 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ast/interfaces/node_wrapper/TruthValueHolder.java" />
-        <option value="$PROJECT_DIR$/src/ast/interfaces/node_wrapper/ValueHolder.java" />
         <option value="$PROJECT_DIR$/src/ast/interfaces/node_wrapper/Variable.java" />
         <option value="$PROJECT_DIR$/src/ast/visitor/LineNumberingVisitor.java" />
         <option value="$PROJECT_DIR$/src/ast/interfaces/Evaluable.java" />
@@ -357,13 +209,15 @@
         <option value="$PROJECT_DIR$/src/ast/expression/NextRandExp.java" />
         <option value="$PROJECT_DIR$/src/cesk/State.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" />
-        <option value="$PROJECT_DIR$/src/modelchecking/ModelState.java" />
-        <option value="$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cesk/SymbolTable.java" />
         <option value="$PROJECT_DIR$/src/cesk/Symbol.java" />
         <option value="$PROJECT_DIR$/src/modelchecking/DFS.java" />
         <option value="$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/modelchecking/ModelState.java" />
+        <option value="$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java" />
+        <option value="$PROJECT_DIR$/psython2.iml" />
+        <option value="$PROJECT_DIR$/.idea/artifacts/psython2_jar.xml" />
       </list>
     </option>
   </component>
@@ -399,119 +253,13 @@
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="atomic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="leaf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cesk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modelchecking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src-test" type="462c0819:PsiDirectoryNode" />
-              <item name="basis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src-test" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src-test" type="462c0819:PsiDirectoryNode" />
-              <item name="modelchecker" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -526,7 +274,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/antlr-runtime-4.7.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/guava-18.0.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -554,32 +302,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RegularChecker.testProgram2">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="psython2" />
+      <option name="PROGRAM_PARAMETERS" value="src-examples/test_puzzle.py" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="RegularChecker.testProgram0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="psython2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="modelchecker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="modelchecker" />
-      <option name="MAIN_CLASS_NAME" value="modelchecker.RegularChecker" />
-      <option name="METHOD_NAME" value="testProgram0" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="RegularChecker.testProgram1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="psython2" />
@@ -722,7 +453,7 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.RegularChecker.testProgram0" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Simulator.testProgram4" />
       <item itemvalue="JUnit.RegularChecker.testProgram1" />
       <item itemvalue="JUnit.Simulator.testProgram5" />
@@ -730,11 +461,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.RegularChecker.testProgram2" />
         <item itemvalue="JUnit.RegularChecker.testProgram1" />
         <item itemvalue="JUnit.Simulator.testProgram5" />
         <item itemvalue="JUnit.Simulator.testProgram4" />
-        <item itemvalue="JUnit.RegularChecker.testProgram0" />
       </list>
     </recent_temporary>
   </component>
@@ -765,7 +496,7 @@
       <workItem from="1543962037354" duration="915000" />
       <workItem from="1544125882047" duration="30338000" />
       <workItem from="1544656107275" duration="48814000" />
-      <workItem from="1545331048403" duration="35874000" />
+      <workItem from="1545331048403" duration="38090000" />
     </task>
     <servers />
   </component>
@@ -802,7 +533,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281522000" />
+    <option name="totallyTimeSpent" value="283738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-7" width="1229" height="735" extended-state="6" />
@@ -822,12 +553,12 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5546624" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.585209" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.5305466" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23794213" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34405145" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24938272" />
       <window_info id="Learn" order="6" />
@@ -916,23 +647,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/WhileExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/ConditionalCmp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/parser/psythonLexer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -1253,20 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelchecking/ModelState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modelchecking/PropertyState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -1274,13 +974,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -1318,7 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/src/modelchecking/DFS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1332,10 +1025,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/ModelState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psython2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/psython2_jar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1398,7 +1135,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1418,7 +1154,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.google.guava:guava:18.0</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/psython2_jar</output-path>
     <root id="archive" name="psython2.jar">
       <element id="module-output" name="psython2" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/junit-4.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/guava-18.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/junit-jupiter-api-5.0.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/opentest4j-1.0.0.jar" path-in-jar="/" />

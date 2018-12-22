@@ -1,10 +1,6 @@
 package modelchecking;
 
-import ast.atomic.RandAssign;
-import ast.expression.NextRandExp;
 import cesk.State;
-import cesk.Symbol;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
