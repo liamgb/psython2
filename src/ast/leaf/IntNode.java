@@ -1,6 +1,7 @@
 package ast.leaf;
 
-import ast.component.Computable;
+import ast.wrapper.Computable;
+import ast.wrapper.Literal;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Val;

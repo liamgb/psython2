@@ -1,10 +1,9 @@
 package ast.expression;
 
-import ast.component.ValueHolder;
+import ast.wrapper.ValueHolder;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
-import cesk.Symbol;
 import cesk.Val;
 
 /*

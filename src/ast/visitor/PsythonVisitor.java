@@ -2,7 +2,6 @@ package ast.visitor;
 
 import ast.component.ConditionalCmp;
 import ast.component.ReturnCmp;
-import ast.component.TruthValueHolder;
 import ast.expression.*;
 import ast.leaf.*;
 
@@ -39,5 +38,10 @@ public interface PsythonVisitor {
 
     void visit(StringNode stringNode);
 
+    void visit(NextRandExp nextRandExp);
+
+    void visit(SeedRandExp seedRandExp);
+
+    void visit(TailExp tail_exp);
 //    void visit(Expression item);
 }

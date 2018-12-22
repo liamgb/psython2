@@ -1,7 +1,8 @@
 package ast.leaf;
 
-import ast.component.PrimitiveTruth;
-import ast.component.TruthValueHolder;
+import ast.wrapper.PrimitiveTruth;
+import ast.wrapper.TruthValueHolder;
+import ast.wrapper.Literal;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Val;

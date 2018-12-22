@@ -5,6 +5,7 @@ import ast.expression.*;
 import ast.component.*;
 import ast.leaf.*;
 import ast.visitor.*;
+import ast.wrapper.*;
 
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -149,6 +150,30 @@ public class psythonASTBaseListener implements psythonASTListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitPrint(psythonASTParser.PrintContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNext_rand(psythonASTParser.Next_randContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNext_rand(psythonASTParser.Next_randContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSeed_rand(psythonASTParser.Seed_randContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSeed_rand(psythonASTParser.Seed_randContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

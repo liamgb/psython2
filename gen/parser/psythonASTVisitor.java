@@ -5,6 +5,7 @@ import ast.expression.*;
 import ast.component.*;
 import ast.leaf.*;
 import ast.visitor.*;
+import ast.wrapper.*;
 
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -82,6 +83,18 @@ public interface psythonASTVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitPrint(psythonASTParser.PrintContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link psythonASTParser#next_rand}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNext_rand(psythonASTParser.Next_randContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link psythonASTParser#seed_rand}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeed_rand(psythonASTParser.Seed_randContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link psythonASTParser#if_then_else}.
 	 * @param ctx the parse tree

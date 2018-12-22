@@ -1,6 +1,8 @@
 package cesk;
 
 
+import java.util.Objects;
+
 public class Val implements Cloneable{
     public ValueType type;
     public int int_v;
@@ -84,5 +86,24 @@ public class Val implements Cloneable{
                 break;
         }
         return v;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Val)) return false;
+        Val val = (Val) o;
+
+        return int_v == val.int_v &&
+                bool_v == val.bool_v &&
+                char_v == val.char_v &&
+                type == val.type &&
+                Objects.equals(str_v, val.str_v);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(type, int_v, bool_v, char_v, str_v);
     }
 }

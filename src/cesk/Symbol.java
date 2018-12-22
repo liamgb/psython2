@@ -1,11 +1,10 @@
 package cesk;
 
-import ast.component.Variable;
+import ast.wrapper.Variable;
 
-import java.util.ArrayList;
 import java.util.Map;
+import java.util.Objects;
 import java.util.TreeMap;
-import java.util.stream.Collectors;
 
 public class Symbol implements Cloneable{
     public Map<String, Symbol> anatomy = null;
@@ -30,13 +29,13 @@ public class Symbol implements Cloneable{
             return vt.name() + ", value: " + this.v;
         }
         else {
-            return vt.name() + ", value: " + this.v + '\n' + anatomy.toString();
+            return "function";
+//            return vt.name() + ", value: " + this.v + '\n' + anatomy.toString();
         }
     }
 
     @Override
-    public Symbol clone() throws CloneNotSupportedException
-    {
+    public Symbol clone() throws CloneNotSupportedException {
         Symbol sym = (Symbol) super.clone();
 
         if (this.anatomy != null) {
@@ -50,5 +49,22 @@ public class Symbol implements Cloneable{
         }
 
         return sym;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Symbol)) return false;
+        Symbol symbol = (Symbol) o;
+        return Objects.equals(anatomy, symbol.anatomy) &&
+                vt == symbol.vt &&
+                Objects.equals(var, symbol.var) &&
+                Objects.equals(v, symbol.v);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(anatomy, vt, var, v);
     }
 }

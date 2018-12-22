@@ -1,9 +1,7 @@
 package cesk;
 
-import ast.component.Variable;
-import ast.leaf.IdentifierNode;
-
 import java.util.Map;
+import java.util.Objects;
 import java.util.TreeMap;
 
 public class SymbolTable implements Cloneable{
@@ -57,9 +55,11 @@ public class SymbolTable implements Cloneable{
 
     @Override
     public String toString(){
+
         return tree.toString();
     }
 
+    // clone for recursive function
     public SymbolTable clone(String scope) throws CloneNotSupportedException
     {
         SymbolTable st = (SymbolTable) super.clone();
@@ -72,6 +72,18 @@ public class SymbolTable implements Cloneable{
         return st;
     }
 
+    // clone for snapshot
+    public SymbolTable clone() throws CloneNotSupportedException
+    {
+        SymbolTable st = (SymbolTable) super.clone();
+        st.tree = new TreeMap<>();
+        for (Map.Entry<String, Symbol> entry: this.tree.entrySet()) {
+            st.tree.put(entry.getKey(), entry.getValue().clone());
+        }
+
+        return st;
+    }
+
     public boolean check_undefined() {
         for (Map.Entry<String, Symbol> ent : this.tree.entrySet()) {
             if (ent.getValue().vt == ValueType.P_UNKNOWN) {
@@ -80,5 +92,19 @@ public class SymbolTable implements Cloneable{
         }
 
         return false;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SymbolTable)) return false;
+        SymbolTable that = (SymbolTable) o;
+        return Objects.equals(tree, that.tree);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(tree);
     }
 }

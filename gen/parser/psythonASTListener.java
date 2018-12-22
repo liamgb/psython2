@@ -5,6 +5,7 @@ import ast.expression.*;
 import ast.component.*;
 import ast.leaf.*;
 import ast.visitor.*;
+import ast.wrapper.*;
 
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -123,6 +124,26 @@ public interface psythonASTListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitPrint(psythonASTParser.PrintContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link psythonASTParser#next_rand}.
+	 * @param ctx the parse tree
+	 */
+	void enterNext_rand(psythonASTParser.Next_randContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link psythonASTParser#next_rand}.
+	 * @param ctx the parse tree
+	 */
+	void exitNext_rand(psythonASTParser.Next_randContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link psythonASTParser#seed_rand}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeed_rand(psythonASTParser.Seed_randContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link psythonASTParser#seed_rand}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeed_rand(psythonASTParser.Seed_randContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link psythonASTParser#if_then_else}.
 	 * @param ctx the parse tree

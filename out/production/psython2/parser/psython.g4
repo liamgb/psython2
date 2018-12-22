@@ -52,6 +52,8 @@ expression
     	| 	print
     	| 	if_then_else
     	|	while_exp
+    	|   next_rand
+    	|   seed_rand
     	;
 
 return_cmp
@@ -88,6 +90,12 @@ logical
 
 print	:	PRINT arglist
 	;
+
+next_rand : NEXT_RAND
+;
+
+seed_rand : SEED_RAND
+;
 
 if_then_else
 	:	IF truth_val ':'
@@ -133,6 +141,8 @@ literal
 BOOL:	TRUE | FALSE
 	;
 
+NEXT_RAND: 'nextr';
+SEED_RAND: 'seedr';
 IF : 'if';
 ELIF : 'elif';
 ELSE : 'else' ;
@@ -183,7 +193,7 @@ HEX_DIGIT : ('0'..'9'|'a'..'f'|'A'..'F') ;
 
 fragment
 ESC_SEQ
-    :   '\\' ('b'|'t'|'n'|'f'|'r'|'\"'|'\''|'\\')
+    :   '\\' ('b'|'t'|'n'|'f'|'r'|'\\"'|'\''|'\\')
     |   UNICODE_ESC
     |   OCTAL_ESC
     ;

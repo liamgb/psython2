@@ -124,6 +124,26 @@ public interface psythonListener extends ParseTreeListener {
 	 */
 	void exitPrint(psythonParser.PrintContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link psythonParser#next_rand}.
+	 * @param ctx the parse tree
+	 */
+	void enterNext_rand(psythonParser.Next_randContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link psythonParser#next_rand}.
+	 * @param ctx the parse tree
+	 */
+	void exitNext_rand(psythonParser.Next_randContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link psythonParser#seed_rand}.
+	 * @param ctx the parse tree
+	 */
+	void enterSeed_rand(psythonParser.Seed_randContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link psythonParser#seed_rand}.
+	 * @param ctx the parse tree
+	 */
+	void exitSeed_rand(psythonParser.Seed_randContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link psythonParser#if_then_else}.
 	 * @param ctx the parse tree
 	 */

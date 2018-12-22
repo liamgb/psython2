@@ -1,8 +1,8 @@
 package ast.expression;
 
-import ast.component.PrimitiveTruth;
-import ast.component.TruthValueHolder;
-import ast.component.ValueHolder;
+import ast.wrapper.PrimitiveTruth;
+import ast.wrapper.TruthValueHolder;
+import ast.wrapper.ValueHolder;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Val;

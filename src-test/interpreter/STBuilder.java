@@ -1,8 +1,7 @@
 package interpreter;
 
 import ast.expression.ExpressionList;
-import ast.visitor.PrettyPrintVisitor;
-import ast.visitor.SymbolTableBuildingVisitor;
+import ast.visitor.SymbolTableVisitor;
 import org.antlr.v4.runtime.ANTLRFileStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.junit.jupiter.api.Test;
@@ -24,9 +23,9 @@ public class STBuilder {
             ExpressionList prg = psyp.program().result;
             assertTrue(psyp.getNumberOfSyntaxErrors() == expected);
 
-            SymbolTableBuildingVisitor stv = new SymbolTableBuildingVisitor();
+            SymbolTableVisitor stv = new SymbolTableVisitor();
             prg.accept(stv);
-            stv = new SymbolTableBuildingVisitor(stv.result);
+            stv = new SymbolTableVisitor(stv.result);
             prg.accept(stv);
 
             System.out.println(stv.result);

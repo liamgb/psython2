@@ -1,6 +1,6 @@
 package ast.expression;
 
-import ast.leaf.Argument;
+import ast.wrapper.Argument;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Val;

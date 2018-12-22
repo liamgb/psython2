@@ -1,39 +1,75 @@
 package cesk;
 
-import ast.expression.Expression;
-import ast.expression.ExpressionList;
-import ast.expression.FunctionCallExp;
-import ast.expression.FunctionExp;
-import ast.leaf.Argument;
 
+import ast.atomic.AtomicExe;
+import ast.atomic.ImperativeProg;
+import ast.atomic.RandAssign;
+import ast.expression.*;
+import ast.wrapper.Argument;
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Stack;
 
 
 public class State implements Cloneable{
-    public int control_counter = -1;
-    public ExpressionList current_frame = null;
+//    public final boolean model_check;
+    public final ImperativeProg imperative_prog = ImperativeProg.get_singleton();
+    public int pc = -1;
     public SymbolTable environment = null;
     public String scope = null;
     public Stack<State> frame_stack = new Stack<>();
+    public Val return_val = null;
+    public boolean terminated = false;
 
-    public State(SymbolTable env, ExpressionList explist) {
-        this.current_frame = explist;
+
+    public State(SymbolTable env) {
+//        this.model_check = model_check;
         this.environment = env;
     }
 
-    public Expression next() {
-        //TODO: pretty sure it's not finished, to be cont.
-        control_counter += 1;
-
-        // itr through current frame
-        if (control_counter < current_frame.exp_list.size()) {
-            return current_frame.exp_list.get(control_counter);
+    public State next() {
+        pc++;
+        if (pc >= 0 && pc < imperative_prog.size()) {
+            imperative_prog.get(pc).step(this);
+            return this;
         }
-        // hit the end of program, return null
         else {
-            return null;
+            pc--;
+            terminated = true;
+            return this;
         }
+    }
+
+    public List<State> next_nd_coverage() throws CloneNotSupportedException{
+        pc++;
+        List<State> result = new ArrayList<State>();
+
+        if (pc >= 0 && pc < imperative_prog.size()) {
+            AtomicExe ae = imperative_prog.get(pc);
+            if (ae instanceof RandAssign) {
+                RandAssign ra = (RandAssign) ae;
+                int trial = NextRandExp.rand_bound;
+
+                for (int i = 0; i < trial; i++) {
+                    State new_state = this.snapshot();
+                    ra.step(new_state, i);
+                    result.add(new_state);
+                }
+
+            } else {
+                ae.step(this);
+                result.add(this);
+            }
+        }
+        else {
+            result.add(this);
+            terminated = true;
+            pc--;
+        }
+
+        return result;
     }
 
     public void interrupt(FunctionCallExp func_call, String func_name, List<Argument> arg_list) {
@@ -52,24 +88,64 @@ public class State implements Cloneable{
             this.environment.lookup(null, func_name).anatomy.get(arg_name).v = arg_v;
         }
 
-        this.control_counter = -1;
-        this.current_frame = func_def.func_body;
+        this.pc = imperative_prog.indexOf(func_name);
         this.scope = func_name;
     }
 
     public void kont() {
         // hit the end of frame, cont. to next frame
         State tar_state = frame_stack.pop();
-        this.control_counter = tar_state.control_counter;
-        this.current_frame = tar_state.current_frame;
+        this.pc = tar_state.pc - 1; // repeat the assignment again with new return value
         this.environment = tar_state.environment;
         this.scope = tar_state.scope;
     }
 
+    // make a deep copy for recursive function
     public State clone(String scope) throws CloneNotSupportedException
     {
         State c_state = (State) super.clone();
         c_state.environment = environment.clone(scope);
         return c_state;
+    }
+
+    // make a deep copy of itself for model checking
+    public State snapshot() throws CloneNotSupportedException
+    {
+        State c_state = (State) super.clone();
+
+        c_state.environment = this.environment.clone();
+        c_state.scope = this.scope;
+        c_state.frame_stack = new Stack<>();
+        if (this.return_val != null) {
+            c_state.return_val = this.return_val.clone();
+        }
+        else {
+            c_state.return_val = null;
+        }
+
+        for (State s : this.frame_stack) {
+            c_state.frame_stack.push(s);
+        }
+
+        return c_state;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof State)) return false;
+        State state = (State) o;
+
+        return pc == state.pc &&
+                return_val == state.return_val &&
+                Objects.equals(environment, state.environment) &&
+                Objects.equals(scope, state.scope) &&
+                Objects.equals(frame_stack, state.frame_stack);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(pc, environment, scope, frame_stack, return_val);
     }
 }

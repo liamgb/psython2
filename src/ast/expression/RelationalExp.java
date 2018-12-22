@@ -1,6 +1,9 @@
 package ast.expression;
 
-import ast.component.*;
+import ast.wrapper.Computable;
+import ast.wrapper.PrimitiveTruth;
+import ast.wrapper.TruthValueHolder;
+import ast.wrapper.ValueHolder;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Val;
@@ -12,7 +15,8 @@ public class RelationalExp extends Expression implements ValueHolder, TruthValue
     public Computable rhs;
 
     public RelationalExp(Computable lhs, Computable rhs, String op) {
-        assert op.equals(">") || op.equals(">=") || op.equals("==") || op.equals("<") || op.equals("<=");
+        assert op.equals(">") || op.equals(">=") || op.equals("==") ||
+                op.equals("!=") || op.equals("<") || op.equals("<=");
         this.lhs = lhs;
         this.rhs = rhs;
         this.op = op;
@@ -27,6 +31,13 @@ public class RelationalExp extends Expression implements ValueHolder, TruthValue
 
     @Override
     public Val eval(State st) {
+        if (lhs.eval(st) == null) {
+            if (rhs.eval(st) == null)
+                return new Val(true);
+            else
+                return new Val(false);
+        }
+
         int lhs_val = lhs.eval(st).int_v;
         int rhs_val = rhs.eval(st).int_v;
         switch (this.op) {
@@ -36,6 +47,8 @@ public class RelationalExp extends Expression implements ValueHolder, TruthValue
                 return new Val(lhs_val >= rhs_val);
             case "==":
                 return new Val(lhs_val == rhs_val);
+            case "!=":
+                return new Val(lhs_val != rhs_val);
             case "<":
                 return new Val(lhs_val < rhs_val);
             case "<=":
@@ -45,6 +58,11 @@ public class RelationalExp extends Expression implements ValueHolder, TruthValue
                 return null;
         }
     }
+
+//    @Override
+//    public Val echo(State st) {
+//        return null;
+//    }
 
     @Override
     public ValueType get_type() {

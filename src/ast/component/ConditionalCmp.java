@@ -2,9 +2,9 @@ package ast.component;
 
 import ast.expression.Expression;
 import ast.expression.ExpressionList;
+import ast.expression.TailExp;
 import ast.visitor.PsythonVisitor;
-import cesk.State;
-import cesk.Val;
+import ast.wrapper.TruthValueHolder;
 
 /*
 if_then_else
@@ -15,9 +15,10 @@ if_then_else
     ;
 */
 
-public class ConditionalCmp implements Component{
+public class ConditionalCmp implements Component {
     public TruthValueHolder if_cond;
     public ExpressionList if_body = null;
+    public TailExp tail = new TailExp();
 
     public ConditionalCmp(TruthValueHolder if_cond, ExpressionList exp_list){
         this.if_cond = if_cond;
@@ -33,5 +34,6 @@ public class ConditionalCmp implements Component{
         v.visit(this);
         if_cond.accept(v);
         if_body.accept(v);
+        tail.accept(v);
     }
 }

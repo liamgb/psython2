@@ -83,6 +83,18 @@ public interface psythonVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPrint(psythonParser.PrintContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link psythonParser#next_rand}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNext_rand(psythonParser.Next_randContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link psythonParser#seed_rand}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSeed_rand(psythonParser.Seed_randContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link psythonParser#if_then_else}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

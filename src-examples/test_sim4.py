@@ -1,6 +1,7 @@
 a = 1
 b = 2
 
+
 def factorial(c):
     result = 0
     if c <= 1:
@@ -11,11 +12,14 @@ def factorial(c):
         result = pre_result * c
     return result
 
+
 def func():
     print "this is a useless functon"
     return 0
+
 
 tar = 10
 fac = factorial(tar)
 
 print "fac of ", tar, " = ", fac
+print "hi this is a random number: ", nextr()

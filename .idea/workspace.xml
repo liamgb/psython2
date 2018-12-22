@@ -2,35 +2,189 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b89ddb79-7221-4e78-9292-05df6ea94f8e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src-examples/test_sim3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src-examples/test_sim4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/AtomicExe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FlowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FlowType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FunReturn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FuncAssign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/FuncDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/ImperativeProg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/RandAssign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/SideEffect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/atomic/SimpleAssign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/expression/NextRandExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/expression/SeedRandExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/expression/TailExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/visitor/AtomicVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/visitor/NumberingVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/Evaluable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/Literal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/PrimitiveTruth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/TruthValueHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ast/wrapper/Variable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helper/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelchecking/DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelchecking/ModelState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelchecking/PropertyState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelchecking/Transition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/Builder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psython.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psython.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonAST.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonAST.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonASTVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonASTVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/parser/psythonVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/parser/psythonVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/Computable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ConditionalCmp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/ConditionalCmp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/PrimitiveTruth.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ReturnCmp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/component/ReturnCmp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/TruthValueHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/ValueHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/component/Variable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/ArithmeticExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/ArithmeticExp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/AssignmentExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/AssignmentExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/Expression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/ExpressionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/ExpressionList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionCallExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionCallExp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/FunctionExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/InterpretVisitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/SymbolTableBuildingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/visitor/SymbolTableBuildingVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/IfThenElseExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/IfThenElseExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/LogicalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/LogicalExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/PrintExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/PrintExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/RelationalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/RelationalExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/expression/WhileExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/expression/WhileExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Argument.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/BoolNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/BoolNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/CharNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/CharNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IdentifierNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IdentifierNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IntNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/IntNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/Literal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/leaf/StringNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/leaf/StringNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PrettyPrintVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PrettyPrintVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PsythonVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/ast/visitor/PsythonVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/ast/visitor/SymbolTableBuildingVisitor.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/State.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Symbol.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/SymbolTable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Val$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Val$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/Val.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/Val.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/psython2/cesk/ValueType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/cesk/ValueType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/interpreter/STBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/interpreter/STBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/psython2/interpreter/Simulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/interpreter/Simulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psython.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psython.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psython.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psython.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonAST.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArglistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArglistContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArgumentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArgumentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArithmeticContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ArithmeticContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$AssignmentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ComputableContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ComputableContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExplistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExplistContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$FunctionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Function_callContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Function_callContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$IdlistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$IdlistContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$If_then_elseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$If_then_elseContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LiteralContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LiteralContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LogicalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$LogicalContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Primitive_truthContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Primitive_truthContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$PrintContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$ProgramContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$RelationalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$RelationalContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Return_cmpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Return_cmpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Truth_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Truth_valContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Value_holderContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$Value_holderContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$While_expContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser$While_expContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonASTVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArglistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArglistContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArgumentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArgumentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArithmeticContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ArithmeticContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$AssignmentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExplistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExplistContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$FunctionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Function_callContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Function_callContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$IdlistContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$IdlistContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$If_then_elseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$If_then_elseContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LiteralContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LiteralContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LogicalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$LogicalContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$PrintContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$ProgramContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$RelationalContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$RelationalContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Return_cmpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Return_cmpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Truth_valContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$Truth_valContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$While_expContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser$While_expContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/psython2/parser/psythonVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/psython2/parser/psythonVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/psython2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/psython2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-examples/test_sim2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/test_sim2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-examples/test_sim3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/test_sim3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-examples/test_sim4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/test_sim4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-examples/xample.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/xample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-test/interpreter/STBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-test/interpreter/STBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src-test/interpreter/Simulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src-test/interpreter/Simulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/Computable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/wrapper/Computable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/PrimitiveTruth.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/TruthValueHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/ValueHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/wrapper/ValueHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/component/Variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/ExpressionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/ExpressionList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/visitor/InterpretVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/PrintExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/PrintExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/expression/WhileExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/expression/WhileExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/leaf/Argument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/wrapper/Argument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/leaf/CharNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/CharNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/leaf/IntNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/IntNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/leaf/Literal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/leaf/StringNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/leaf/StringNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/visitor/PsythonVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/PsythonVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ast/visitor/SymbolTableVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/Symbol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/SymbolTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cesk/Val.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/Val.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cesk/ValueType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cesk/ValueType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/psython.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/psython.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/psythonAST.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/psythonAST.g4" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,34 +196,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Val.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cesk/Val.java">
+      <file leaf-file-name="DFS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modelchecking/DFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Simulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="53" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-                <element signature="e#2100#2101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="25">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,23 +208,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Symbol.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cesk/Symbol.java">
+      <file leaf-file-name="LogicalExp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ast/expression/LogicalExp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValueType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cesk/ValueType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            <state relative-caret-position="115">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -101,32 +220,53 @@
       <file leaf-file-name="SymbolTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cesk/SymbolTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="74" column="36" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SymbolTableBuildingVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java">
+      <file leaf-file-name="Symbol.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cesk/Symbol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="243">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunctionCallExp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java">
+      <file leaf-file-name="ModelState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modelchecking/ModelState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="850">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegularChecker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="22" selection-start-line="22" selection-end-line="33" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyAutomaton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -137,6 +277,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -158,6 +299,12 @@
       <find>this.result</find>
       <find>function</find>
       <find>result.insert</find>
+      <find>compo</find>
+      <find>return</find>
+      <find>returncm</find>
+      <find>atomic</find>
+      <find>next_rand</find>
+      <find>value_holder</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,56 +313,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gen/parser/psythonASTLexer.java" />
-        <option value="$PROJECT_DIR$/src-test/basis/CalcTest.java" />
-        <option value="$PROJECT_DIR$/src/helper/HelperTest.java" />
-        <option value="$PROJECT_DIR$/src/helper/DenterHelperTest.java" />
-        <option value="$PROJECT_DIR$/src/ast/visitor/PsythonVisitorOld.java" />
-        <option value="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitorOld.java" />
-        <option value="$PROJECT_DIR$/src/ast/component/ComparableCmp.java" />
-        <option value="$PROJECT_DIR$/src-test/basis/ASTParserTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java" />
-        <option value="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuilder.java" />
-        <option value="$PROJECT_DIR$/src-test/interpreter/STBuilder.java" />
-        <option value="$PROJECT_DIR$/src-test/basis/ParserTest.java" />
-        <option value="$PROJECT_DIR$/src/cesk/Value.java" />
-        <option value="$PROJECT_DIR$/src/ast/component/Value.java" />
-        <option value="$PROJECT_DIR$/src/ast/component/Variable.java" />
+        <option value="$PROJECT_DIR$/src/ast/interfaces/node_wrapper/TruthValueHolder.java" />
+        <option value="$PROJECT_DIR$/src/ast/interfaces/node_wrapper/ValueHolder.java" />
+        <option value="$PROJECT_DIR$/src/ast/interfaces/node_wrapper/Variable.java" />
+        <option value="$PROJECT_DIR$/src/ast/visitor/LineNumberingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ast/interfaces/Evaluable.java" />
+        <option value="$PROJECT_DIR$/src/ast/wrapper/Evaluable.java" />
+        <option value="$PROJECT_DIR$/src/utility/utility.java" />
+        <option value="$PROJECT_DIR$/src/ast/wrapper/Computable.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/ExpressionList.java" />
-        <option value="$PROJECT_DIR$/src/ast/visitor/InterpretVisitor.java" />
-        <option value="$PROJECT_DIR$/src/ast/expression/Expression.java" />
-        <option value="$PROJECT_DIR$/src/ast/component/ValueHolder.java" />
-        <option value="$PROJECT_DIR$/src/ast/component/Computable.java" />
-        <option value="$PROJECT_DIR$/src/ast/leaf/Literal.java" />
-        <option value="$PROJECT_DIR$/src/ast/leaf/IntNode.java" />
-        <option value="$PROJECT_DIR$/src/ast/leaf/CharNode.java" />
-        <option value="$PROJECT_DIR$/src/ast/leaf/BoolNode.java" />
-        <option value="$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java" />
-        <option value="$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java" />
-        <option value="$PROJECT_DIR$/src/ast/leaf/Argument.java" />
-        <option value="$PROJECT_DIR$/src/ast/component/PrimitiveTruth.java" />
-        <option value="$PROJECT_DIR$/src/ast/expression/LogicalExp.java" />
-        <option value="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" />
-        <option value="$PROJECT_DIR$/src/ast/component/TruthValueHolder.java" />
+        <option value="$PROJECT_DIR$/src/ast/visitor/PsythonVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ast/visitor/NumberingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ast/visitor/SymbolTableVisitor.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/WhileExp.java" />
-        <option value="$PROJECT_DIR$/src/parser/psython.g4" />
-        <option value="$PROJECT_DIR$/src/ast/expression/PrintExp.java" />
-        <option value="$PROJECT_DIR$/src/ast/leaf/StringNode.java" />
+        <option value="$PROJECT_DIR$/src/ast/expression/TailExp.java" />
         <option value="$PROJECT_DIR$/src/ast/component/ConditionalCmp.java" />
         <option value="$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java" />
-        <option value="$PROJECT_DIR$/src/parser/psythonAST.g4" />
-        <option value="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/FlowType.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/ImpertiveProg.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/FunCall.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/ImperativeProg.java" />
+        <option value="$PROJECT_DIR$/gen/parser/psythonASTParser.java" />
         <option value="$PROJECT_DIR$/src/ast/component/ReturnCmp.java" />
-        <option value="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" />
-        <option value="$PROJECT_DIR$/src/cesk/State.java" />
-        <option value="$PROJECT_DIR$/src/cesk/Symbol.java" />
-        <option value="$PROJECT_DIR$/src/ast/expression/AssignmentExp.java" />
-        <option value="$PROJECT_DIR$/src/cesk/ValueType.java" />
+        <option value="$PROJECT_DIR$/src/modelchecking/Stepper.java" />
+        <option value="$PROJECT_DIR$/src/ast/expression/FunctionExp.java" />
+        <option value="$PROJECT_DIR$/src/ast/expression/Expression.java" />
         <option value="$PROJECT_DIR$/src/cesk/Val.java" />
-        <option value="$PROJECT_DIR$/src/cesk/SymbolTable.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/AtomicExe.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/FlowController.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/FuncAssign.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/FuncDef.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/FunReturn.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/SideEffect.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/SimpleAssign.java" />
+        <option value="$PROJECT_DIR$/src/ast/visitor/AtomicVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ast/atomic/RandAssign.java" />
+        <option value="$PROJECT_DIR$/src/utility/Builder.java" />
+        <option value="$PROJECT_DIR$/src/modelchecking/PropertyState.java" />
+        <option value="$PROJECT_DIR$/src/parser/psythonAST.g4" />
+        <option value="$PROJECT_DIR$/src/ast/expression/RelationalExp.java" />
         <option value="$PROJECT_DIR$/src-test/interpreter/Simulator.java" />
-        <option value="$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ast/expression/NextRandExp.java" />
+        <option value="$PROJECT_DIR$/src/cesk/State.java" />
+        <option value="$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java" />
+        <option value="$PROJECT_DIR$/src/modelchecking/ModelState.java" />
+        <option value="$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java" />
+        <option value="$PROJECT_DIR$/src/cesk/SymbolTable.java" />
+        <option value="$PROJECT_DIR$/src/cesk/Symbol.java" />
+        <option value="$PROJECT_DIR$/src/modelchecking/DFS.java" />
+        <option value="$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -241,12 +388,24 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
@@ -258,6 +417,13 @@
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ast" type="462c0819:PsiDirectoryNode" />
+              <item name="atomic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
@@ -291,7 +457,38 @@
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ast" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cesk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modelchecking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
@@ -310,11 +507,16 @@
               <item name="src-test" type="462c0819:PsiDirectoryNode" />
               <item name="interpreter" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psython2" type="462c0819:PsiDirectoryNode" />
+              <item name="src-test" type="462c0819:PsiDirectoryNode" />
+              <item name="modelchecker" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -327,7 +529,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/antlr-runtime-4.7.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -352,27 +554,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="psython2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.RegularChecker.testProgram2">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Simulator.testProgram0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegularChecker.testProgram0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="psython2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="interpreter.*" />
+          <option name="PATTERN" value="modelchecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="interpreter" />
-      <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
+      <option name="PACKAGE_NAME" value="modelchecker" />
+      <option name="MAIN_CLASS_NAME" value="modelchecker.RegularChecker" />
       <option name="METHOD_NAME" value="testProgram0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -384,18 +581,18 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Simulator.testProgram1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegularChecker.testProgram1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="psython2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="interpreter.*" />
+          <option name="PATTERN" value="modelchecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="interpreter" />
-      <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
+      <option name="PACKAGE_NAME" value="modelchecker" />
+      <option name="MAIN_CLASS_NAME" value="modelchecker.RegularChecker" />
       <option name="METHOD_NAME" value="testProgram1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -407,18 +604,18 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Simulator.testProgram2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegularChecker.testProgram2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="psython2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="interpreter.*" />
+          <option name="PATTERN" value="modelchecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="interpreter" />
-      <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
+      <option name="PACKAGE_NAME" value="modelchecker" />
+      <option name="MAIN_CLASS_NAME" value="modelchecker.RegularChecker" />
       <option name="METHOD_NAME" value="testProgram2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -430,7 +627,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Simulator.testProgram3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Simulator.testProgram4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="psython2" />
       <extension name="coverage">
         <pattern>
@@ -442,7 +639,30 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="interpreter" />
       <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
-      <option name="METHOD_NAME" value="testProgram3" />
+      <option name="METHOD_NAME" value="testProgram4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Simulator.testProgram5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="psython2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="interpreter" />
+      <option name="MAIN_CLASS_NAME" value="interpreter.Simulator" />
+      <option name="METHOD_NAME" value="testProgram5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -502,19 +722,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Simulator.testProgram0" />
-      <item itemvalue="JUnit.Simulator.testProgram1" />
-      <item itemvalue="JUnit.Simulator.testProgram2" />
-      <item itemvalue="JUnit.Simulator.testProgram3" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.RegularChecker.testProgram0" />
+      <item itemvalue="JUnit.Simulator.testProgram4" />
+      <item itemvalue="JUnit.RegularChecker.testProgram1" />
+      <item itemvalue="JUnit.Simulator.testProgram5" />
+      <item itemvalue="JUnit.RegularChecker.testProgram2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.Simulator.testProgram3" />
-        <item itemvalue="JUnit.Simulator.testProgram2" />
-        <item itemvalue="JUnit.Simulator.testProgram1" />
-        <item itemvalue="JUnit.Simulator.testProgram0" />
+        <item itemvalue="JUnit.RegularChecker.testProgram2" />
+        <item itemvalue="JUnit.RegularChecker.testProgram1" />
+        <item itemvalue="JUnit.Simulator.testProgram5" />
+        <item itemvalue="JUnit.Simulator.testProgram4" />
+        <item itemvalue="JUnit.RegularChecker.testProgram0" />
       </list>
     </recent_temporary>
   </component>
@@ -536,51 +756,60 @@
       <workItem from="1540008384609" duration="21151000" />
       <workItem from="1540673784805" duration="17097000" />
       <workItem from="1541271230681" duration="5575000" />
-      <workItem from="1541655619056" duration="42627000" />
+      <workItem from="1541655619056" duration="43256000" />
+      <workItem from="1542313358386" duration="4611000" />
+      <workItem from="1542820294529" duration="15028000" />
+      <workItem from="1543464187205" duration="16943000" />
+      <workItem from="1543805246284" duration="605000" />
+      <workItem from="1543876171634" duration="1833000" />
+      <workItem from="1543962037354" duration="915000" />
+      <workItem from="1544125882047" duration="30338000" />
+      <workItem from="1544656107275" duration="48814000" />
+      <workItem from="1545331048403" duration="35874000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 26m 43s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 12h 54m 09s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 27m 26s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 12h 57m 11s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 44m 58s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 00m 18s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 13h 48m 20s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 00m 42s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 11m 12s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 01m 43s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 11m 29s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 01m 45s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 12m 23s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 01m 50s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 25m 08s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 02m 33s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 25m 23s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 02m 42s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Simulator_testProgram3 - 2018.11.10 at 16h 26m 02s.xml">
-      <configuration name="Simulator.testProgram3" configurationId="JUnit" />
+    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 03m 45s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125932000" />
+    <option name="totallyTimeSpent" value="281522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-7" width="1229" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Tool Output" order="13" weight="0.5755627" />
+      <window_info anchor="bottom" id="Tool Output" order="13" weight="0.32636657" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5004115" side_tool="true" weight="0.39067525" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -591,17 +820,16 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46623793" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5546624" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329582" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.585209" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33279744" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23794213" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24938272" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -610,6 +838,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,38 +849,57 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="66" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ast/expression/NextRandExp.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ast/expression/PrintExp.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="146" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>lhs.lookup(st)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
       <expression>
         <expression-string>st.environment.lookup(st.scope, id_name).v</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((Variable) assignmentExp.rhs).get_name()</expression-string>
+        <expression-string>st.environment.lookup(st.scope, id_name)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>entry.getValue()</expression-string>
+        <expression-string>st.environment</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>st.tree.get(scope)</expression-string>
+        <expression-string>t.condition.eval(program_state)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>st.tree.get(scope).anatomy</expression-string>
+        <expression-string>t.condition</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>t</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rhs.eval(st)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -661,243 +909,155 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>func_call.arg_list.get(i)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>arg_v</expression-string>
+        <expression-string>arg_list.get(1).eval(st)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gen/parser/psythonParser.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/WhileExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+        <state relative-caret-position="170">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/ComparableCmp.java" />
-    <entry file="file://$PROJECT_DIR$/gen/parser/psythonASTParser.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/component/ConditionalCmp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-776">
-          <caret line="850" column="221" selection-start-line="850" selection-start-column="221" selection-end-line="850" selection-end-column="221" />
+        <state relative-caret-position="127">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="47" selection-start-column="47" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/gen/parser/psythonLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/visitor/PsythonVisitor.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/wrapper/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cesk/ValueType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="7" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/visitor/PrettyPrintVisitor.java">
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/Stepper.java" />
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" selection-end-line="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/visitor/SymbolTable.java" />
-    <entry file="file://$PROJECT_DIR$/src-test/basis/ASTParserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/component/ReturnCmp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/TreeMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src-test/basis/ParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-365">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/Value.java" />
-    <entry file="file://$PROJECT_DIR$/src-test/interpreter/STBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="39" selection-start-line="39" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/Computable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/ValueHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/Literal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/CharNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="75">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/expression/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/BoolNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/IntNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/PrimitiveTruth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/RelationalExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/LogicalExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/psython.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/ExpressionList.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/TailExp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/PrintExp.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/StringNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="92">
+          <caret line="429" selection-start-line="429" selection-end-line="429" />
           <folding>
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#14404#14405#0" expanded="true" />
+            <element signature="e#14445#14446#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/TruthValueHolder.java">
+    <entry file="file://$PROJECT_DIR$/src/cesk/Val.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/visitor/NumberingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-test/interpreter/STBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/FuncDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/FunReturn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/AtomicExe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/visitor/AtomicVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/SideEffect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
@@ -907,17 +1067,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/WhileExp.java">
+    <entry file="file://$PROJECT_DIR$/src/utility/Builder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="201">
+          <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/ConditionalCmp.java">
+    <entry file="file://$PROJECT_DIR$/gen/parser/psythonASTParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="-4165">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -926,172 +1089,253 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/psythonAST.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="308" column="5" lean-forward="true" selection-start-line="308" selection-start-column="5" selection-end-line="308" selection-end-column="5" />
+        <state relative-caret-position="3046">
+          <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/Variable.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/ImperativeProg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/visitor/InterpretVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="184">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Cloneable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="57" />
-          <folding>
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/leaf/Argument.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/SimpleAssign.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionExp.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/RandAssign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="177">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/NextRandExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/PrintExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="26" column="71" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="26" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/FlowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/FlowType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/RelationalExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/expression/AssignmentExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="236">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/expression/IfThenElseExp.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/ArithmeticExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="195">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/component/ReturnCmp.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/visitor/SymbolTableVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="249">
+          <caret line="163" column="9" lean-forward="true" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/wrapper/PrimitiveTruth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/atomic/FuncAssign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/ExpressionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ast/expression/FunctionCallExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/ValueType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/Symbol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="319">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/SymbolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="74" column="36" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cesk/Val.java">
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/Transition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ast/visitor/SymbolTableBuildingVisitor.java">
+    <entry file="file://$PROJECT_DIR$/src/ast/leaf/IdentifierNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+        <state relative-caret-position="319">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src-test/interpreter/Simulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="53" selection-end-column="9" />
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/ModelState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/PropertyState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2100#2101#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/PropertyAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cesk/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ast/expression/LogicalExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cesk/SymbolTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cesk/Symbol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelchecking/DFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="22" selection-start-line="22" selection-end-line="33" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1114,7 +1358,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1174,7 +1418,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>com.google.guava:guava:18.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

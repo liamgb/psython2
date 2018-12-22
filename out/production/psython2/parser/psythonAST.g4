@@ -9,7 +9,7 @@ options
 
 @lexer::header {
 import helper.*;
-import ast.expression.*;
+import ast.*;
 }
 
 @parser::header {
@@ -17,6 +17,7 @@ import ast.expression.*;
 import ast.component.*;
 import ast.leaf.*;
 import ast.visitor.*;
+import ast.wrapper.*;
 }
 
 @lexer::members {
@@ -77,6 +78,12 @@ expression returns [Expression result = null]
     |   whl=while_exp {
         $result = $whl.result;
     }
+    |   nr=next_rand {
+        $result = $nr.result;
+    }
+    |   sr=seed_rand {
+        $result = $sr.result;
+    }
     ;
 
 return_cmp returns [ReturnCmp result = null]
@@ -135,15 +142,27 @@ print returns [PrintExp result = null]
     }
 	;
 
+next_rand returns [NextRandExp result = null]
+    : NEXT_RAND {
+        $result = new NextRandExp();
+    }
+    ;
+
+seed_rand returns [SeedRandExp result = null]
+    : SEED_RAND {
+        $result = new SeedRandExp();
+    }
+    ;
+
 if_then_else returns [IfThenElseExp result = null]
 	:	IF ifcond=truth_val ':'
 	        INDENT ifbd=explist DEDENT{
 	            $result = new IfThenElseExp($ifcond.result, $ifbd.result);
             }
-		(ELIF elifcond=truth_val ':'
-		    INDENT elifbd=explist DEDENT{
-                $result.create_elif_statement($elifcond.result, $elifbd.result);
-		})*
+//		(ELIF elifcond=truth_val ':'
+//		    INDENT elifbd=explist DEDENT{
+//                $result.create_elif_statement($elifcond.result, $elifbd.result);
+//		})*
 		(ELSE ':'
 		    INDENT elsebd=explist DEDENT{
 		        $result.create_else_body($elsebd.result);
@@ -185,6 +204,9 @@ value_holder returns [ValueHolder result=null]
     |	func=function_call{
     	$result = $func.result;
     }
+    |   nr=next_rand{
+        $result = $nr.result;
+    }
     ;
 
 argument returns [Argument result = null]
@@ -193,6 +215,9 @@ argument returns [Argument result = null]
 	}
 	|   lit=literal {
 	    $result = $lit.result;
+	}
+	|   nr=next_rand {
+	    $result = $nr.result;
 	}
 	;
 
@@ -263,7 +288,7 @@ literal returns [Literal result = null]
 ARITH_OPT: ('+' | '-' | '*' | '/')
     ;
 
-REL_OPT: ('>' | '>=' | '==' | '<' | '<=')
+REL_OPT: ('>' | '>=' | '==' | '!=' | '<' | '<=')
     ;
 
 BOOL:	TRUE | FALSE
@@ -281,6 +306,8 @@ FALSE: 'False' ;
 AND: 'and' ;
 OR: 'or' ;
 NOT: 'not';
+NEXT_RAND: 'nextr()';
+SEED_RAND: 'seedr()';
 
 //keyword
 //    : IF | ELIF | ELSE | RETURN | DEF | WHILE | PRINT | TRUE | FALSE | AND | OR | NOT
@@ -313,7 +340,7 @@ HEX_DIGIT : ('0'..'9'|'a'..'f'|'A'..'F') ;
 
 fragment
 ESC_SEQ
-    :   '\\' ('b'|'t'|'n'|'f'|'r'|'\"'|'\''|'\\')
+    :   '\\' ('b'|'t'|'n'|'f'|'r'|'\\"'|'\''|'\\')
     |   UNICODE_ESC
     |   OCTAL_ESC
     ;

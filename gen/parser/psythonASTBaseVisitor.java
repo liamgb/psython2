@@ -5,6 +5,7 @@ import ast.expression.*;
 import ast.component.*;
 import ast.leaf.*;
 import ast.visitor.*;
+import ast.wrapper.*;
 
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
@@ -94,6 +95,20 @@ public class psythonASTBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitPrint(psythonASTParser.PrintContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitNext_rand(psythonASTParser.Next_randContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitSeed_rand(psythonASTParser.Seed_randContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *

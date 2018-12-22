@@ -1,0 +1,1592 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ref",
+				"\\ref{key}                                         \tlatex-document"
+			],
+			[
+				"Phi",
+				"\\varPhi                                           \tamsmath"
+			],
+			[
+				"ve",
+				"\\vec{a}                                           \tlatex-mathsymbols"
+			],
+			[
+				"soution",
+				"\\begin{solution}                                  \tlocal"
+			],
+			[
+				"equat",
+				"\\begin{equation}                                  \tlatex-document"
+			],
+			[
+				"clear",
+				"\\clearpage                                        \tlatex-document"
+			],
+			[
+				"enumer",
+				"\\begin{enumerate}                                 \tlatex-document"
+			],
+			[
+				"sqrt",
+				"\\sqrt{arg}                                        \tlatex-document"
+			],
+			[
+				"equa",
+				"\\begin{equation}                                  \tlatex-document"
+			],
+			[
+				"solution",
+				"\\begin{solution}                                  \tlocal"
+			],
+			[
+				"end",
+				"\\end{}                                            \tlatex-document"
+			],
+			[
+				"ini",
+				"init_cash\tstatement"
+			],
+			[
+				"_pad",
+				"_pad_zeros_to_matrix2\tfunction"
+			],
+			[
+				"inves",
+				"investor_a\tstatement"
+			],
+			[
+				"cure",
+				"current_ask"
+			],
+			[
+				"in",
+				"investment\tstatement"
+			],
+			[
+				"N",
+				"NASDAQ"
+			],
+			[
+				"order",
+				"order_book\tstatement"
+			],
+			[
+				"iter",
+				"itertools"
+			],
+			[
+				"cur",
+				"cur_row"
+			],
+			[
+				"show",
+				"show_ob\tfunction"
+			],
+			[
+				"price",
+				"price_flux\tstatement"
+			],
+			[
+				"share",
+				"shares_remaining"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"curr",
+				"current_ask"
+			],
+			[
+				"cu",
+				"current_ask"
+			],
+			[
+				"current",
+				"current_ask"
+			],
+			[
+				"df",
+				"df_obj\tstatement"
+			],
+			[
+				"str",
+				"strip"
+			],
+			[
+				"order_bk_s",
+				"order_bk_s10"
+			],
+			[
+				"0",
+				"0"
+			],
+			[
+				"mat",
+				"matplotlib"
+			],
+			[
+				"T",
+				"TIME_M"
+			],
+			[
+				"Time",
+				"TIME_M"
+			],
+			[
+				"TR",
+				"TR_SOURCE"
+			],
+			[
+				"A",
+				"AAPL_01_04_2016_joined_taq_itch"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test_mc_while.py",
+			"settings":
+			{
+				"buffer_size": 43,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "i = 0"
+			}
+		},
+		{
+			"file": "test_sim3.py",
+			"settings":
+			{
+				"buffer_size": 168,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test_sim4.py",
+			"settings":
+			{
+				"buffer_size": 382,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash_g++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash_python.sublime-build",
+					""
+				],
+				[
+					"Packages/User/repl_python.sublime-build",
+					""
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"Traditional"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash_g++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash_python.sublime-build",
+					""
+				],
+				[
+					"Packages/User/repl_python.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash_g++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash_python.sublime-build",
+					""
+				],
+				[
+					"Packages/User/repl_python.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"pack",
+				"Package Control: Remove Repository"
+			],
+			[
+				"add re",
+				"Package Control: Add Repository"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"local",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"ant",
+				"Set Syntax: Antlr"
+			],
+			[
+				"pack install",
+				"Package Control: Install Package"
+			],
+			[
+				"set rac",
+				"Set Syntax: Racket"
+			],
+			[
+				"sapce",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"session",
+				"Session Manager: Load Session"
+			],
+			[
+				"error",
+				"Anaconda: Show error list"
+			],
+			[
+				"lint",
+				"Anaconda: Disable linting on this file"
+			],
+			[
+				"auto",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"load",
+				"Session Manager: Load Session"
+			],
+			[
+				"sesion",
+				"Session Manager: Load Session"
+			],
+			[
+				"convert space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"list erro",
+				"Anaconda: Show error list"
+			],
+			[
+				"conver sp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"repl ",
+				"SublimeREPL: Python"
+			],
+			[
+				"justi",
+				"CSV: Justify columns"
+			],
+			[
+				"suot",
+				"SublimeREPL: OCaml utop"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"repl pyton",
+				"SublimeREPL: Python"
+			],
+			[
+				"csv j",
+				"CSV: Justify columns"
+			],
+			[
+				"hermes",
+				"Hermes: Start Kernel"
+			],
+			[
+				"h",
+				"Hermes: Connect Server"
+			],
+			[
+				"repl python",
+				"SublimeREPL: Python"
+			],
+			[
+				"REPL PTYHON",
+				"SublimeREPL: Python"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"rep python",
+				"SublimeREPL: Python"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"package rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"format",
+				"JsPrettier: Format Code"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"java sc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"set color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"her",
+				"Hermes: Get Object Inspection"
+			],
+			[
+				"herme",
+				"Hermes: Execute Block"
+			],
+			[
+				"her ",
+				"Hermes: Settings"
+			],
+			[
+				"her ex",
+				"Hermes: Execute Block"
+			],
+			[
+				"herme ",
+				"Hermes: Execute Block"
+			],
+			[
+				"herme ex",
+				"Hermes: Execute Block"
+			],
+			[
+				"rep",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"repl ip",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"rep i",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"just",
+				"CSV: Justify columns"
+			],
+			[
+				"re python",
+				"SublimeREPL: Python"
+			],
+			[
+				"package ",
+				"Package Control: List Packages"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"",
+				"A File Icon: Settings"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 260.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/mocli/Miniconda3/Scripts/jupyter-notebook-script.py",
+		"/C/Users/mocli/Code/psython2/src-examples/test_sim2.py",
+		"/C/Users/mocli/Code/psython2/src-examples/test_sim1.py",
+		"/C/Users/mocli/Downloads/research/finance/src/statistic.py",
+		"/C/Users/mocli/Downloads/wire3d_demo.py",
+		"/C/Users/mocli/Miniconda3/Lib/site-packages/waipy/cwt/lib_wavelet.py",
+		"/C/Users/mocli/Downloads/research/finance/src/OBAO.py",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/statistic.py",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/order_book_analyzer2.py",
+		"/C/Users/mocli/Downloads/_cs401r/midterm1/m1_redo.tex",
+		"/C/Users/mocli/Downloads/_cs401r/midterm1/m1_ans_key.tex",
+		"/C/Users/mocli/Code/psython2/src-examples/xample.py",
+		"/C/Users/mocli/Downloads/research/network_semantics/proposal/bib.bib",
+		"/C/Users/mocli/Downloads/research/network_semantics/proposal/main.tex",
+		"/C/Users/mocli/Downloads/research/network_semantics/final_draft/main.bib",
+		"/C/Users/mocli/Downloads/research/network_semantics/final_draft/main.tex",
+		"/C/Users/mocli/Downloads/research/network_semantics/thesis/thesis.tex",
+		"/C/Users/mocli/Downloads/research/network_semantics/thesis/bib.bib",
+		"/C/Users/mocli/Downloads/_cs401r/midterm2/exam1/main.tex",
+		"/C/Users/mocli/Downloads/_cs401r/midterm1/cs401r_Midterm1_ans_key/main.tex",
+		"/C/Users/mocli/Downloads/_cs712/712-control-textbook/Semantic/ness_cond.tex",
+		"/C/Users/mocli/Downloads/_cs712/712-control-textbook/Semantic/main.tex",
+		"/C/Users/mocli/Downloads/_cs712/ctrl_TB_snap_shot_2/representation.tex",
+		"/C/Users/mocli/Downloads/_cs712/712-control-textbook/references.bib",
+		"/C/Users/mocli/Downloads/_cs712/712-control-textbook/main.bbl",
+		"/C/Users/mocli/Downloads/research/network_semantics/thesis/byumsphd-example.tex",
+		"/C/Users/mocli/Downloads/research/network_semantics/thesis/byumsphd-example.log",
+		"/C/Users/mocli/Downloads/research/network_semantics/thesis/byumsphd-example.bbl",
+		"/C/Users/mocli/Downloads/research/network_semantics/thesis/byumsphd-example.toc",
+		"/C/Users/mocli/Downloads/research/network_semantics/proposal/byuprop-example.tex",
+		"/C/Users/mocli/Code/psython2/src-examples/test_sim4.py",
+		"/C/Users/mocli/Downloads/_cs401r/HW3/key/hw3key.tex",
+		"/C/Users/mocli/Downloads/_cs513/CS-513-Midterm-1Solutions-(Fall 2016)/main.tex",
+		"/C/Users/mocli/Code/psython2/src-examples/test_sim3.py",
+		"/C/Users/mocli/Downloads/lines3d_demo.py",
+		"/C/Users/mocli/Code/psython2/src-examples/test1.py",
+		"/C/Users/mocli/Downloads/research/finance/src/FslAccessor.py",
+		"/C/Users/mocli/Downloads/_cs401r/HW7/SurfaceTemperatureAnomaly.txt",
+		"/C/Program Files/SumatraPDF/2016)/main.tex",
+		"/C/Users/mocli/Downloads/_cs513/CS-513-Midterm-1Solutions-(Fall",
+		"/C/Users/mocli/Code/psython2/src-examples/test_opts.py",
+		"/C/Users/mocli/Code/psython2/src-examples/test_ifthenelse.py",
+		"/C/Users/mocli/Code/psython2/src-examples/test_func.py",
+		"/C/Users/mocli/Downloads/_cs401r/HW2/key/hw2key.tex",
+		"/C/Users/mocli/Downloads/_cs401r/study_guide/guide.tex",
+		"/C/Users/mocli/AppData/Local/Temp/7zO471CBF6D/note.txt",
+		"/C/Users/mocli/Downloads/Review23607.txt",
+		"/C/Users/mocli/Downloads/problem 1.py",
+		"/C/Users/mocli/Downloads/_cs401r/HW5/ans/problem 4.txt",
+		"/C/Users/mocli/Downloads/_cs401r/HW5/notebook/IEM_data.csv",
+		"/C/Users/mocli/Downloads/_cs401r/HW3/problem 3.ipynb",
+		"/C/Users/mocli/Downloads/_cs401r/HW5/notebook/house.csv",
+		"/C/Users/mocli/Downloads/_cs401r/HW4/key/cs401r_HW4.tex",
+		"/C/Users/mocli/Code/psython/src/parser/output/mylangParser.java",
+		"/C/Users/mocli/Code/psython/src/parser/output/psythonASTParser.java",
+		"/C/Users/mocli/Code/psython/src/parser/psythonAST.g",
+		"/C/Users/mocli/Code/psython/src/parser/psython.g",
+		"/C/Users/mocli/Code/psython/src/parser/mylangAST.g",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/parser/calcAST.g",
+		"/C/Users/mocli/Downloads/_cs686/mylang/xample.py",
+		"/C/Users/mocli/Downloads/_cs686/mylang/parser/mylang.g",
+		"/C/Users/mocli/Code/psython/src/parser/output/mylangLexer.java",
+		"/C/Users/mocli/Downloads/_cs686/mylang/mylang.txt",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/CalcVisitor.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/CompoundStm.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/IdExp.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/Exp.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/OpExp.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/NumExp.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/Stm.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/PrintVisitor.java",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/ast/AssignStm.java",
+		"/C/Users/mocli/Downloads/_cs686/mylang/mylang.g4",
+		"/C/Users/mocli/Downloads/_cs686/hello/lectures/ANTLR-tutorial-calc/src/calc/parser/calc.g",
+		"/C/Users/mocli/AppData/Local/Temp/7zO8EA0B1AB/homework1.tex",
+		"/C/Users/mocli/Downloads/_cs401r/HW1/main.tex",
+		"/C/Users/mocli/Desktop/55-paramiko.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO4F3A02D4/00-package_control.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO4F315B27/50-python-markdown.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO4F332C96/dependency-metadata.json",
+		"/C/Users/mocli/AppData/Local/Temp/7zO4F3650E4/51-python-jinja2.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO4F337C04/01-python-six.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO4F30AD53/55-mdpopups.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO4F39ED63/dependency-metadata.json",
+		"/C/Users/mocli/AppData/Roaming/Sublime Text 3/Installed Packages/0_package_control_loader.sublime-package",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/OBAO.py",
+		"/C/Users/mocli/Downloads/_cs686/Hello.g4",
+		"/C/Users/mocli/Downloads/_cs686/antlr4-4.7.1/tool/playground/Main.java",
+		"/C/Users/mocli/Desktop/mylang.txt",
+		"/C/Users/mocli/Downloads/_cs330/_cs330/racketEX/RCFAE.rkt",
+		"/C/Users/mocli/Downloads/_cs330/_cs330/assignments/hw1.rkt",
+		"/C/Users/mocli/Downloads/_cs330/_cs330/racketEX/racket5.rkt",
+		"/C/Users/mocli/Downloads/_cs330/_cs330/notes/racket1.rkt",
+		"/C/Users/mocli/Downloads/_cs330/_cs330/racketEX/racket3.rkt",
+		"/C/Users/mocli/Downloads/_cs330/_cs330/racketEX/racket2.rkt",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/collective_stat.py",
+		"/C/Users/mocli/Downloads/research/finance/draft/main.tex",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/trading_alg.py",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/Predictor.py",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/jim_alg/revert_itch_V_bidask_v5.py",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/lob_mpc.py",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/Orderbook.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO8BC3149A/02-bz2.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO843240E9/02-bz2.py",
+		"/C/Users/mocli/AppData/Local/Temp/7zO843F8BD9/02-bz2.py",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/jim_alg/itch_mod.py",
+		"/C/Users/mocli/Downloads/research/finance/mean_reversion/experiment/revert_v3.py",
+		"/C/Users/mocli/Downloads/research/finance/mean_reversion/example/revert_v3.py",
+		"/D/data/abb/img/010816_ABB/index.txt",
+		"/C/Users/mocli/Desktop/010816_AAB/index.txt",
+		"/C/Users/mocli/Downloads/research/finance/data/test/order_bk_test.json",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/test.py",
+		"/D/data/abb/img/010416_ABB/index.txt",
+		"/D/data/abb/img/010616_ABB/index.txt",
+		"/C/Users/mocli/Downloads/research/finance/tutorial_paper/ieeeconf.cls",
+		"/C/Users/mocli/Downloads/research/finance/tutorial_paper/references.bib",
+		"/C/Users/mocli/Downloads/research/finance/data/abb/img/010416_ABB_by_tick/010416_ABB.txt",
+		"/C/Users/mocli/Downloads/research/finance/data/abb/img/010416_ABB.txt",
+		"/D/Readme.txt",
+		"/C/Users/mocli/Downloads/research/finance/data/abb/json/010416_ABB.json",
+		"/C/Users/mocli/Downloads/research/finance/pca_order_book/order_book_analyzer3.py",
+		"/C/Users/mocli/Downloads/research/finance/data/020314_AAPL/ob/order_bk_s100.json",
+		"/C/Users/mocli/Downloads/research/finance/data/abb/json/010516_ABB.json",
+		"/C/Users/mocli/Downloads/research/finance/data/010416_FRA/ob/order_bk_s1.json",
+		"/C/Users/mocli/Downloads/research/finance/data/010416_FRA/010416_FRA.csv",
+		"/C/Users/mocli/Miniconda3/lib/site-packages/colorama/ansitowin32.py",
+		"/C/Users/mocli/Downloads/research/finance/data/020314_AAPL/ob/order_bk_s1.json",
+		"/C/Users/mocli/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"col_app",
+			"self.order_book",
+			"**",
+			"]",
+			"[",
+			"stat",
+			"size",
+			"collec",
+			"definition",
+			"causality",
+			"mit",
+			"Theory-and-Applications-of-Network-Structure-of-Complex-Dynamical-Systems",
+			"Designing-Stabilizing-Distributed-Controllers",
+			"Passive-Network-Reconstruction-Technique-to-Twitter-Data",
+			"Representing-Structure-in-Systems",
+			"e0",
+			"en1",
+			"definition",
+			"{definition}",
+			"defn",
+			"definition",
+			"author\t= \"V. Chetty and J. Eliason and S. Warnick\",\ntitle\t= \"Passive Reconstruction of Non-Target-Specific Discrete-Time LTI Systems\",\nbooktitle\t= \"American Control Conference\",\naddress\t= \"Boston, MA\",\nyear\t= 2016,",
+			"\\in",
+			": [0, \\infty) \\to",
+			"fig01",
+			"fig",
+			"continuous",
+			"equation",
+			"f",
+			"mathcal",
+			"that is",
+			"D_W",
+			"D",
+			"align",
+			"bar",
+			"phi",
+			"algin",
+			"Structural Canonical Form",
+			"hespa",
+			", ",
+			"{",
+			"enumer",
+			"enumerate",
+			"W, V",
+			"proof",
+			">>> ",
+			">>>",
+			">>> ",
+			">>>",
+			"lcurvyangle",
+			"\\qquad"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test_mc_while.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": "\\",
+									"selector": "text.tex.latex"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"auto_name": "i = 0",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test_sim3.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": "\\",
+									"selector": "text.tex.latex"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test_sim4.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": "\\",
+									"selector": "text.tex.latex"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 70.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 174.0
+	},
+	"output.exec":
+	{
+		"height": 320.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hermes_object_inspect":
+	{
+		"height": 174.0
+	},
+	"output.latextools":
+	{
+		"height": 270.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 129.0
+	},
+	"pinned_build_system": "",
+	"project": "psthon_examples.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 145.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

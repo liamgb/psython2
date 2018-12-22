@@ -1,11 +1,12 @@
 package ast.leaf;
 
+import ast.wrapper.Literal;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Val;
 import cesk.ValueType;
 
-public class StringNode implements Literal{
+public class StringNode implements Literal {
     public String str;
     public StringNode( String str ) {
         this.str = str.substring(1, str.length()-1);

@@ -1,6 +1,6 @@
 package ast.leaf;
 
-import ast.component.*;
+import ast.wrapper.*;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Symbol;

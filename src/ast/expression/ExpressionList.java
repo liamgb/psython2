@@ -4,11 +4,17 @@ import ast.visitor.PsythonVisitor;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ExpressionList {
+    public int number = -1;
     public List<Expression> exp_list = new ArrayList<>();
 
     public ExpressionList() {
+    }
+
+    public ExpressionList(ExpressionList el) {
+//        this.exp_list
     }
 
     public ExpressionList(Expression exp) {
@@ -19,24 +25,24 @@ public class ExpressionList {
         this.exp_list.add(0, exp);
     }
 
-    static public int count_tabs(String str) {
-        if (str != null) {
-            int counter = 0;
-            for (int i = 0; i < str.length(); i++) {
-                if (str.charAt(i) == '\t')
-                    counter++;
-            }
-            return counter;
-        }
-        else {
-            return 0;
-        }
-    }
-
     public void accept(PsythonVisitor v) {
         v.visit(this);
         for (Expression exp : this.exp_list) {
             exp.accept(v);
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ExpressionList)) return false;
+        ExpressionList that = (ExpressionList) o;
+        return exp_list.equals(that.exp_list);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(exp_list);
     }
 }

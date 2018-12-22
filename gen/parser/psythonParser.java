@@ -24,32 +24,34 @@ public class psythonParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
-		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, BOOL=15, IF=16, ELIF=17, 
-		ELSE=18, RETURN=19, DEF=20, WHILE=21, PRINT=22, TRUE=23, FALSE=24, AND=25, 
-		OR=26, NOT=27, ID=28, NL=29, INT=30, STRING=31, CHAR=32, WS=33, COMMENT=34, 
-		INDENT=35, DEDENT=36;
+		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, BOOL=15, NEXT_RAND=16, 
+		SEED_RAND=17, IF=18, ELIF=19, ELSE=20, RETURN=21, DEF=22, WHILE=23, PRINT=24, 
+		TRUE=25, FALSE=26, AND=27, OR=28, NOT=29, ID=30, NL=31, INT=32, STRING=33, 
+		CHAR=34, WS=35, COMMENT=36, INDENT=37, DEDENT=38;
 	public static final int
 		RULE_program = 0, RULE_explist = 1, RULE_expression = 2, RULE_return_cmp = 3, 
 		RULE_function = 4, RULE_function_call = 5, RULE_assignment = 6, RULE_arithmetic = 7, 
-		RULE_relational = 8, RULE_logical = 9, RULE_print = 10, RULE_if_then_else = 11, 
-		RULE_while_exp = 12, RULE_argument = 13, RULE_idlist = 14, RULE_arglist = 15, 
-		RULE_truth_val = 16, RULE_literal = 17;
+		RULE_relational = 8, RULE_logical = 9, RULE_print = 10, RULE_next_rand = 11, 
+		RULE_seed_rand = 12, RULE_if_then_else = 13, RULE_while_exp = 14, RULE_argument = 15, 
+		RULE_idlist = 16, RULE_arglist = 17, RULE_truth_val = 18, RULE_literal = 19;
 	public static final String[] ruleNames = {
 		"program", "explist", "expression", "return_cmp", "function", "function_call", 
-		"assignment", "arithmetic", "relational", "logical", "print", "if_then_else", 
-		"while_exp", "argument", "idlist", "arglist", "truth_val", "literal"
+		"assignment", "arithmetic", "relational", "logical", "print", "next_rand", 
+		"seed_rand", "if_then_else", "while_exp", "argument", "idlist", "arglist", 
+		"truth_val", "literal"
 	};
 
 	private static final String[] _LITERAL_NAMES = {
 		null, "'('", "')'", "':'", "'='", "'+'", "'-'", "'*'", "'/'", "'>'", "'>='", 
-		"'=='", "'<'", "'<='", "','", null, "'if'", "'elif'", "'else'", "'return'", 
-		"'def'", "'while'", "'print'", "'True'", "'False'", "'and'", "'or'", "'not'"
+		"'=='", "'<'", "'<='", "','", null, "'nextr'", "'seedr'", "'if'", "'elif'", 
+		"'else'", "'return'", "'def'", "'while'", "'print'", "'True'", "'False'", 
+		"'and'", "'or'", "'not'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, "BOOL", "IF", "ELIF", "ELSE", "RETURN", "DEF", "WHILE", 
-		"PRINT", "TRUE", "FALSE", "AND", "OR", "NOT", "ID", "NL", "INT", "STRING", 
-		"CHAR", "WS", "COMMENT", "INDENT", "DEDENT"
+		null, null, null, "BOOL", "NEXT_RAND", "SEED_RAND", "IF", "ELIF", "ELSE", 
+		"RETURN", "DEF", "WHILE", "PRINT", "TRUE", "FALSE", "AND", "OR", "NOT", 
+		"ID", "NL", "INT", "STRING", "CHAR", "WS", "COMMENT", "INDENT", "DEDENT"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -130,9 +132,9 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(36);
+			setState(40);
 			explist();
-			setState(37);
+			setState(41);
 			match(EOF);
 			}
 		}
@@ -178,24 +180,24 @@ public class psythonParser extends Parser {
 		ExplistContext _localctx = new ExplistContext(_ctx, getState());
 		enterRule(_localctx, 2, RULE_explist);
 		try {
-			setState(45);
+			setState(49);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,0,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(39);
+				setState(43);
 				expression();
-				setState(40);
+				setState(44);
 				explist();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(42);
+				setState(46);
 				match(NL);
-				setState(43);
+				setState(47);
 				explist();
 				}
 				break;
@@ -245,6 +247,12 @@ public class psythonParser extends Parser {
 		public While_expContext while_exp() {
 			return getRuleContext(While_expContext.class,0);
 		}
+		public Next_randContext next_rand() {
+			return getRuleContext(Next_randContext.class,0);
+		}
+		public Seed_randContext seed_rand() {
+			return getRuleContext(Seed_randContext.class,0);
+		}
 		public ExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -268,70 +276,84 @@ public class psythonParser extends Parser {
 		ExpressionContext _localctx = new ExpressionContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_expression);
 		try {
-			setState(56);
+			setState(62);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,1,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(47);
+				setState(51);
 				function_call();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(48);
+				setState(52);
 				assignment();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(49);
+				setState(53);
 				function();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(50);
+				setState(54);
 				arithmetic();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(51);
+				setState(55);
 				relational();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(52);
+				setState(56);
 				logical();
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(53);
+				setState(57);
 				print();
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(54);
+				setState(58);
 				if_then_else();
 				}
 				break;
 			case 9:
 				enterOuterAlt(_localctx, 9);
 				{
-				setState(55);
+				setState(59);
 				while_exp();
+				}
+				break;
+			case 10:
+				enterOuterAlt(_localctx, 10);
+				{
+				setState(60);
+				next_rand();
+				}
+				break;
+			case 11:
+				enterOuterAlt(_localctx, 11);
+				{
+				setState(61);
+				seed_rand();
 				}
 				break;
 			}
@@ -377,9 +399,9 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(58);
+			setState(64);
 			match(RETURN);
-			setState(59);
+			setState(65);
 			arglist();
 			}
 		}
@@ -437,28 +459,28 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(61);
-			match(DEF);
-			setState(62);
-			match(ID);
-			setState(63);
-			match(T__0);
-			setState(64);
-			idlist();
-			setState(65);
-			match(T__1);
-			setState(66);
-			match(T__2);
 			setState(67);
-			match(INDENT);
+			match(DEF);
 			setState(68);
-			explist();
+			match(ID);
+			setState(69);
+			match(T__0);
+			setState(70);
+			idlist();
 			setState(71);
+			match(T__1);
+			setState(72);
+			match(T__2);
+			setState(73);
+			match(INDENT);
+			setState(74);
+			explist();
+			setState(77);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case NL:
 				{
-				setState(69);
+				setState(75);
 				match(NL);
 				}
 				break;
@@ -469,11 +491,11 @@ public class psythonParser extends Parser {
 			default:
 				throw new NoViableAltException(this);
 			}
-			setState(73);
+			setState(79);
 			return_cmp();
-			setState(74);
+			setState(80);
 			match(NL);
-			setState(75);
+			setState(81);
 			match(DEDENT);
 			}
 		}
@@ -518,13 +540,13 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(77);
+			setState(83);
 			match(ID);
-			setState(78);
+			setState(84);
 			match(T__0);
-			setState(79);
+			setState(85);
 			arglist();
-			setState(80);
+			setState(86);
 			match(T__1);
 			}
 		}
@@ -584,46 +606,46 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(82);
+			setState(88);
 			idlist();
-			setState(83);
+			setState(89);
 			match(T__3);
-			setState(90);
+			setState(96);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,3,_ctx) ) {
 			case 1:
 				{
-				setState(84);
+				setState(90);
 				match(ID);
 				}
 				break;
 			case 2:
 				{
-				setState(85);
+				setState(91);
 				literal();
 				}
 				break;
 			case 3:
 				{
-				setState(86);
+				setState(92);
 				arithmetic();
 				}
 				break;
 			case 4:
 				{
-				setState(87);
+				setState(93);
 				relational();
 				}
 				break;
 			case 5:
 				{
-				setState(88);
+				setState(94);
 				logical();
 				}
 				break;
 			case 6:
 				{
-				setState(89);
+				setState(95);
 				function_call();
 				}
 				break;
@@ -676,7 +698,7 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(92);
+			setState(98);
 			_la = _input.LA(1);
 			if ( !(_la==ID || _la==INT) ) {
 			_errHandler.recoverInline(this);
@@ -686,7 +708,7 @@ public class psythonParser extends Parser {
 				_errHandler.reportMatch(this);
 				consume();
 			}
-			setState(93);
+			setState(99);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -696,7 +718,7 @@ public class psythonParser extends Parser {
 				_errHandler.reportMatch(this);
 				consume();
 			}
-			setState(94);
+			setState(100);
 			_la = _input.LA(1);
 			if ( !(_la==ID || _la==INT) ) {
 			_errHandler.recoverInline(this);
@@ -754,7 +776,7 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(96);
+			setState(102);
 			_la = _input.LA(1);
 			if ( !(_la==ID || _la==INT) ) {
 			_errHandler.recoverInline(this);
@@ -764,7 +786,7 @@ public class psythonParser extends Parser {
 				_errHandler.reportMatch(this);
 				consume();
 			}
-			setState(97);
+			setState(103);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__8) | (1L << T__9) | (1L << T__10) | (1L << T__11) | (1L << T__12))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -774,7 +796,7 @@ public class psythonParser extends Parser {
 				_errHandler.reportMatch(this);
 				consume();
 			}
-			setState(98);
+			setState(104);
 			_la = _input.LA(1);
 			if ( !(_la==ID || _la==INT) ) {
 			_errHandler.recoverInline(this);
@@ -839,7 +861,7 @@ public class psythonParser extends Parser {
 		enterRule(_localctx, 18, RULE_logical);
 		int _la;
 		try {
-			setState(117);
+			setState(123);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case BOOL:
@@ -847,41 +869,9 @@ public class psythonParser extends Parser {
 			case INT:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(103);
-				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,4,_ctx) ) {
-				case 1:
-					{
-					setState(100);
-					match(ID);
-					}
-					break;
-				case 2:
-					{
-					setState(101);
-					match(BOOL);
-					}
-					break;
-				case 3:
-					{
-					setState(102);
-					relational();
-					}
-					break;
-				}
-				setState(105);
-				_la = _input.LA(1);
-				if ( !(_la==AND || _la==OR) ) {
-				_errHandler.recoverInline(this);
-				}
-				else {
-					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
-					_errHandler.reportMatch(this);
-					consume();
-				}
 				setState(109);
 				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,5,_ctx) ) {
+				switch ( getInterpreter().adaptivePredict(_input,4,_ctx) ) {
 				case 1:
 					{
 					setState(106);
@@ -901,16 +891,19 @@ public class psythonParser extends Parser {
 					}
 					break;
 				}
-				}
-				break;
-			case NOT:
-				enterOuterAlt(_localctx, 2);
-				{
 				setState(111);
-				match(NOT);
+				_la = _input.LA(1);
+				if ( !(_la==AND || _la==OR) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				setState(115);
 				_errHandler.sync(this);
-				switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
+				switch ( getInterpreter().adaptivePredict(_input,5,_ctx) ) {
 				case 1:
 					{
 					setState(112);
@@ -926,6 +919,35 @@ public class psythonParser extends Parser {
 				case 3:
 					{
 					setState(114);
+					relational();
+					}
+					break;
+				}
+				}
+				break;
+			case NOT:
+				enterOuterAlt(_localctx, 2);
+				{
+				setState(117);
+				match(NOT);
+				setState(121);
+				_errHandler.sync(this);
+				switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
+				case 1:
+					{
+					setState(118);
+					match(ID);
+					}
+					break;
+				case 2:
+					{
+					setState(119);
+					match(BOOL);
+					}
+					break;
+				case 3:
+					{
+					setState(120);
 					relational();
 					}
 					break;
@@ -949,8 +971,8 @@ public class psythonParser extends Parser {
 
 	public static class PrintContext extends ParserRuleContext {
 		public TerminalNode PRINT() { return getToken(psythonParser.PRINT, 0); }
-		public ArgumentContext argument() {
-			return getRuleContext(ArgumentContext.class,0);
+		public ArglistContext arglist() {
+			return getRuleContext(ArglistContext.class,0);
 		}
 		public PrintContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -977,10 +999,94 @@ public class psythonParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(119);
+			setState(125);
 			match(PRINT);
-			setState(120);
-			argument();
+			setState(126);
+			arglist();
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class Next_randContext extends ParserRuleContext {
+		public TerminalNode NEXT_RAND() { return getToken(psythonParser.NEXT_RAND, 0); }
+		public Next_randContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_next_rand; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof psythonListener ) ((psythonListener)listener).enterNext_rand(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof psythonListener ) ((psythonListener)listener).exitNext_rand(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof psythonVisitor ) return ((psythonVisitor<? extends T>)visitor).visitNext_rand(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+
+	public final Next_randContext next_rand() throws RecognitionException {
+		Next_randContext _localctx = new Next_randContext(_ctx, getState());
+		enterRule(_localctx, 22, RULE_next_rand);
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(128);
+			match(NEXT_RAND);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class Seed_randContext extends ParserRuleContext {
+		public TerminalNode SEED_RAND() { return getToken(psythonParser.SEED_RAND, 0); }
+		public Seed_randContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_seed_rand; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof psythonListener ) ((psythonListener)listener).enterSeed_rand(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof psythonListener ) ((psythonListener)listener).exitSeed_rand(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof psythonVisitor ) return ((psythonVisitor<? extends T>)visitor).visitSeed_rand(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+
+	public final Seed_randContext seed_rand() throws RecognitionException {
+		Seed_randContext _localctx = new Seed_randContext(_ctx, getState());
+		enterRule(_localctx, 24, RULE_seed_rand);
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(130);
+			match(SEED_RAND);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1042,61 +1148,61 @@ public class psythonParser extends Parser {
 
 	public final If_then_elseContext if_then_else() throws RecognitionException {
 		If_then_elseContext _localctx = new If_then_elseContext(_ctx, getState());
-		enterRule(_localctx, 22, RULE_if_then_else);
+		enterRule(_localctx, 26, RULE_if_then_else);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(122);
+			setState(132);
 			match(IF);
-			setState(123);
+			setState(133);
 			truth_val();
-			setState(124);
+			setState(134);
 			match(T__2);
-			setState(125);
+			setState(135);
 			match(INDENT);
-			setState(126);
+			setState(136);
 			explist();
-			setState(127);
-			match(DEDENT);
 			setState(137);
+			match(DEDENT);
+			setState(147);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==ELIF) {
 				{
 				{
-				setState(128);
+				setState(138);
 				match(ELIF);
-				setState(129);
+				setState(139);
 				truth_val();
-				setState(130);
+				setState(140);
 				match(T__2);
-				setState(131);
+				setState(141);
 				match(INDENT);
-				setState(132);
+				setState(142);
 				explist();
-				setState(133);
+				setState(143);
 				match(DEDENT);
 				}
 				}
-				setState(139);
+				setState(149);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(146);
+			setState(156);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==ELSE) {
 				{
-				setState(140);
+				setState(150);
 				match(ELSE);
-				setState(141);
+				setState(151);
 				match(T__2);
-				setState(142);
+				setState(152);
 				match(INDENT);
-				setState(143);
+				setState(153);
 				explist();
-				setState(144);
+				setState(154);
 				match(DEDENT);
 				}
 			}
@@ -1145,21 +1251,21 @@ public class psythonParser extends Parser {
 
 	public final While_expContext while_exp() throws RecognitionException {
 		While_expContext _localctx = new While_expContext(_ctx, getState());
-		enterRule(_localctx, 24, RULE_while_exp);
+		enterRule(_localctx, 28, RULE_while_exp);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(148);
+			setState(158);
 			match(WHILE);
-			setState(149);
+			setState(159);
 			truth_val();
-			setState(150);
+			setState(160);
 			match(T__2);
-			setState(151);
+			setState(161);
 			match(INDENT);
-			setState(152);
+			setState(162);
 			explist();
-			setState(153);
+			setState(163);
 			match(DEDENT);
 			}
 		}
@@ -1200,15 +1306,15 @@ public class psythonParser extends Parser {
 
 	public final ArgumentContext argument() throws RecognitionException {
 		ArgumentContext _localctx = new ArgumentContext(_ctx, getState());
-		enterRule(_localctx, 26, RULE_argument);
+		enterRule(_localctx, 30, RULE_argument);
 		try {
-			setState(157);
+			setState(167);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ID:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(155);
+				setState(165);
 				match(ID);
 				}
 				break;
@@ -1218,7 +1324,7 @@ public class psythonParser extends Parser {
 			case CHAR:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(156);
+				setState(166);
 				literal();
 				}
 				break;
@@ -1263,26 +1369,26 @@ public class psythonParser extends Parser {
 
 	public final IdlistContext idlist() throws RecognitionException {
 		IdlistContext _localctx = new IdlistContext(_ctx, getState());
-		enterRule(_localctx, 28, RULE_idlist);
+		enterRule(_localctx, 32, RULE_idlist);
 		try {
-			setState(164);
+			setState(174);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case T__13:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(159);
+				setState(169);
 				match(T__13);
-				setState(160);
+				setState(170);
 				idlist();
 				}
 				break;
 			case ID:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(161);
+				setState(171);
 				match(ID);
-				setState(162);
+				setState(172);
 				idlist();
 				}
 				break;
@@ -1335,41 +1441,34 @@ public class psythonParser extends Parser {
 
 	public final ArglistContext arglist() throws RecognitionException {
 		ArglistContext _localctx = new ArglistContext(_ctx, getState());
-		enterRule(_localctx, 30, RULE_arglist);
+		enterRule(_localctx, 34, RULE_arglist);
 		try {
-			setState(172);
+			setState(182);
 			_errHandler.sync(this);
-			switch (_input.LA(1)) {
-			case T__13:
+			switch ( getInterpreter().adaptivePredict(_input,12,_ctx) ) {
+			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(166);
+				setState(176);
 				match(T__13);
-				setState(167);
+				setState(177);
 				arglist();
 				}
 				break;
-			case BOOL:
-			case ID:
-			case INT:
-			case STRING:
-			case CHAR:
+			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(168);
+				setState(178);
 				argument();
-				setState(169);
+				setState(179);
 				arglist();
 				}
 				break;
-			case T__1:
-			case NL:
+			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
 				}
 				break;
-			default:
-				throw new NoViableAltException(this);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1413,36 +1512,36 @@ public class psythonParser extends Parser {
 
 	public final Truth_valContext truth_val() throws RecognitionException {
 		Truth_valContext _localctx = new Truth_valContext(_ctx, getState());
-		enterRule(_localctx, 32, RULE_truth_val);
+		enterRule(_localctx, 36, RULE_truth_val);
 		try {
-			setState(178);
+			setState(188);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,13,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(174);
+				setState(184);
 				match(ID);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(175);
+				setState(185);
 				match(BOOL);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(176);
+				setState(186);
 				relational();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(177);
+				setState(187);
 				logical();
 				}
 				break;
@@ -1485,12 +1584,12 @@ public class psythonParser extends Parser {
 
 	public final LiteralContext literal() throws RecognitionException {
 		LiteralContext _localctx = new LiteralContext(_ctx, getState());
-		enterRule(_localctx, 34, RULE_literal);
+		enterRule(_localctx, 38, RULE_literal);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(180);
+			setState(190);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << BOOL) | (1L << INT) | (1L << STRING) | (1L << CHAR))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -1514,62 +1613,65 @@ public class psythonParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3&\u00b9\4\2\t\2\4"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3(\u00c3\4\2\t\2\4"+
 		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
 		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
-		"\4\23\t\23\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\3\3\5\3\60\n\3\3\4\3\4\3\4"+
-		"\3\4\3\4\3\4\3\4\3\4\3\4\5\4;\n\4\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6"+
-		"\3\6\3\6\3\6\3\6\5\6J\n\6\3\6\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\b\3\b"+
-		"\3\b\3\b\3\b\3\b\3\b\3\b\5\b]\n\b\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\n\3\13"+
-		"\3\13\3\13\5\13j\n\13\3\13\3\13\3\13\3\13\5\13p\n\13\3\13\3\13\3\13\3"+
-		"\13\5\13v\n\13\5\13x\n\13\3\f\3\f\3\f\3\r\3\r\3\r\3\r\3\r\3\r\3\r\3\r"+
-		"\3\r\3\r\3\r\3\r\3\r\7\r\u008a\n\r\f\r\16\r\u008d\13\r\3\r\3\r\3\r\3\r"+
-		"\3\r\3\r\5\r\u0095\n\r\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\17\3\17\5"+
-		"\17\u00a0\n\17\3\20\3\20\3\20\3\20\3\20\5\20\u00a7\n\20\3\21\3\21\3\21"+
-		"\3\21\3\21\3\21\5\21\u00af\n\21\3\22\3\22\3\22\3\22\5\22\u00b5\n\22\3"+
-		"\23\3\23\3\23\2\2\24\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$\2\7\4"+
-		"\2\36\36  \3\2\7\n\3\2\13\17\3\2\33\34\4\2\21\21 \"\2\u00c7\2&\3\2\2\2"+
-		"\4/\3\2\2\2\6:\3\2\2\2\b<\3\2\2\2\n?\3\2\2\2\fO\3\2\2\2\16T\3\2\2\2\20"+
-		"^\3\2\2\2\22b\3\2\2\2\24w\3\2\2\2\26y\3\2\2\2\30|\3\2\2\2\32\u0096\3\2"+
-		"\2\2\34\u009f\3\2\2\2\36\u00a6\3\2\2\2 \u00ae\3\2\2\2\"\u00b4\3\2\2\2"+
-		"$\u00b6\3\2\2\2&\'\5\4\3\2\'(\7\2\2\3(\3\3\2\2\2)*\5\6\4\2*+\5\4\3\2+"+
-		"\60\3\2\2\2,-\7\37\2\2-\60\5\4\3\2.\60\3\2\2\2/)\3\2\2\2/,\3\2\2\2/.\3"+
-		"\2\2\2\60\5\3\2\2\2\61;\5\f\7\2\62;\5\16\b\2\63;\5\n\6\2\64;\5\20\t\2"+
-		"\65;\5\22\n\2\66;\5\24\13\2\67;\5\26\f\28;\5\30\r\29;\5\32\16\2:\61\3"+
-		"\2\2\2:\62\3\2\2\2:\63\3\2\2\2:\64\3\2\2\2:\65\3\2\2\2:\66\3\2\2\2:\67"+
-		"\3\2\2\2:8\3\2\2\2:9\3\2\2\2;\7\3\2\2\2<=\7\25\2\2=>\5 \21\2>\t\3\2\2"+
-		"\2?@\7\26\2\2@A\7\36\2\2AB\7\3\2\2BC\5\36\20\2CD\7\4\2\2DE\7\5\2\2EF\7"+
-		"%\2\2FI\5\4\3\2GJ\7\37\2\2HJ\3\2\2\2IG\3\2\2\2IH\3\2\2\2JK\3\2\2\2KL\5"+
-		"\b\5\2LM\7\37\2\2MN\7&\2\2N\13\3\2\2\2OP\7\36\2\2PQ\7\3\2\2QR\5 \21\2"+
-		"RS\7\4\2\2S\r\3\2\2\2TU\5\36\20\2U\\\7\6\2\2V]\7\36\2\2W]\5$\23\2X]\5"+
-		"\20\t\2Y]\5\22\n\2Z]\5\24\13\2[]\5\f\7\2\\V\3\2\2\2\\W\3\2\2\2\\X\3\2"+
-		"\2\2\\Y\3\2\2\2\\Z\3\2\2\2\\[\3\2\2\2]\17\3\2\2\2^_\t\2\2\2_`\t\3\2\2"+
-		"`a\t\2\2\2a\21\3\2\2\2bc\t\2\2\2cd\t\4\2\2de\t\2\2\2e\23\3\2\2\2fj\7\36"+
-		"\2\2gj\7\21\2\2hj\5\22\n\2if\3\2\2\2ig\3\2\2\2ih\3\2\2\2jk\3\2\2\2ko\t"+
-		"\5\2\2lp\7\36\2\2mp\7\21\2\2np\5\22\n\2ol\3\2\2\2om\3\2\2\2on\3\2\2\2"+
-		"px\3\2\2\2qu\7\35\2\2rv\7\36\2\2sv\7\21\2\2tv\5\22\n\2ur\3\2\2\2us\3\2"+
-		"\2\2ut\3\2\2\2vx\3\2\2\2wi\3\2\2\2wq\3\2\2\2x\25\3\2\2\2yz\7\30\2\2z{"+
-		"\5\34\17\2{\27\3\2\2\2|}\7\22\2\2}~\5\"\22\2~\177\7\5\2\2\177\u0080\7"+
-		"%\2\2\u0080\u0081\5\4\3\2\u0081\u008b\7&\2\2\u0082\u0083\7\23\2\2\u0083"+
-		"\u0084\5\"\22\2\u0084\u0085\7\5\2\2\u0085\u0086\7%\2\2\u0086\u0087\5\4"+
-		"\3\2\u0087\u0088\7&\2\2\u0088\u008a\3\2\2\2\u0089\u0082\3\2\2\2\u008a"+
-		"\u008d\3\2\2\2\u008b\u0089\3\2\2\2\u008b\u008c\3\2\2\2\u008c\u0094\3\2"+
-		"\2\2\u008d\u008b\3\2\2\2\u008e\u008f\7\24\2\2\u008f\u0090\7\5\2\2\u0090"+
-		"\u0091\7%\2\2\u0091\u0092\5\4\3\2\u0092\u0093\7&\2\2\u0093\u0095\3\2\2"+
-		"\2\u0094\u008e\3\2\2\2\u0094\u0095\3\2\2\2\u0095\31\3\2\2\2\u0096\u0097"+
-		"\7\27\2\2\u0097\u0098\5\"\22\2\u0098\u0099\7\5\2\2\u0099\u009a\7%\2\2"+
-		"\u009a\u009b\5\4\3\2\u009b\u009c\7&\2\2\u009c\33\3\2\2\2\u009d\u00a0\7"+
-		"\36\2\2\u009e\u00a0\5$\23\2\u009f\u009d\3\2\2\2\u009f\u009e\3\2\2\2\u00a0"+
-		"\35\3\2\2\2\u00a1\u00a2\7\20\2\2\u00a2\u00a7\5\36\20\2\u00a3\u00a4\7\36"+
-		"\2\2\u00a4\u00a7\5\36\20\2\u00a5\u00a7\3\2\2\2\u00a6\u00a1\3\2\2\2\u00a6"+
-		"\u00a3\3\2\2\2\u00a6\u00a5\3\2\2\2\u00a7\37\3\2\2\2\u00a8\u00a9\7\20\2"+
-		"\2\u00a9\u00af\5 \21\2\u00aa\u00ab\5\34\17\2\u00ab\u00ac\5 \21\2\u00ac"+
-		"\u00af\3\2\2\2\u00ad\u00af\3\2\2\2\u00ae\u00a8\3\2\2\2\u00ae\u00aa\3\2"+
-		"\2\2\u00ae\u00ad\3\2\2\2\u00af!\3\2\2\2\u00b0\u00b5\7\36\2\2\u00b1\u00b5"+
-		"\7\21\2\2\u00b2\u00b5\5\22\n\2\u00b3\u00b5\5\24\13\2\u00b4\u00b0\3\2\2"+
-		"\2\u00b4\u00b1\3\2\2\2\u00b4\u00b2\3\2\2\2\u00b4\u00b3\3\2\2\2\u00b5#"+
-		"\3\2\2\2\u00b6\u00b7\t\6\2\2\u00b7%\3\2\2\2\20/:I\\iouw\u008b\u0094\u009f"+
-		"\u00a6\u00ae\u00b4";
+		"\4\23\t\23\4\24\t\24\4\25\t\25\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\3\3\5\3"+
+		"\64\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\5\4A\n\4\3\5\3\5\3"+
+		"\5\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\5\6P\n\6\3\6\3\6\3\6\3\6\3"+
+		"\7\3\7\3\7\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\5\bc\n\b\3\t\3\t\3"+
+		"\t\3\t\3\n\3\n\3\n\3\n\3\13\3\13\3\13\5\13p\n\13\3\13\3\13\3\13\3\13\5"+
+		"\13v\n\13\3\13\3\13\3\13\3\13\5\13|\n\13\5\13~\n\13\3\f\3\f\3\f\3\r\3"+
+		"\r\3\16\3\16\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3"+
+		"\17\3\17\7\17\u0094\n\17\f\17\16\17\u0097\13\17\3\17\3\17\3\17\3\17\3"+
+		"\17\3\17\5\17\u009f\n\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\21\3\21"+
+		"\5\21\u00aa\n\21\3\22\3\22\3\22\3\22\3\22\5\22\u00b1\n\22\3\23\3\23\3"+
+		"\23\3\23\3\23\3\23\5\23\u00b9\n\23\3\24\3\24\3\24\3\24\5\24\u00bf\n\24"+
+		"\3\25\3\25\3\25\2\2\26\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(\2"+
+		"\7\4\2  \"\"\3\2\7\n\3\2\13\17\3\2\35\36\4\2\21\21\"$\2\u00d1\2*\3\2\2"+
+		"\2\4\63\3\2\2\2\6@\3\2\2\2\bB\3\2\2\2\nE\3\2\2\2\fU\3\2\2\2\16Z\3\2\2"+
+		"\2\20d\3\2\2\2\22h\3\2\2\2\24}\3\2\2\2\26\177\3\2\2\2\30\u0082\3\2\2\2"+
+		"\32\u0084\3\2\2\2\34\u0086\3\2\2\2\36\u00a0\3\2\2\2 \u00a9\3\2\2\2\"\u00b0"+
+		"\3\2\2\2$\u00b8\3\2\2\2&\u00be\3\2\2\2(\u00c0\3\2\2\2*+\5\4\3\2+,\7\2"+
+		"\2\3,\3\3\2\2\2-.\5\6\4\2./\5\4\3\2/\64\3\2\2\2\60\61\7!\2\2\61\64\5\4"+
+		"\3\2\62\64\3\2\2\2\63-\3\2\2\2\63\60\3\2\2\2\63\62\3\2\2\2\64\5\3\2\2"+
+		"\2\65A\5\f\7\2\66A\5\16\b\2\67A\5\n\6\28A\5\20\t\29A\5\22\n\2:A\5\24\13"+
+		"\2;A\5\26\f\2<A\5\34\17\2=A\5\36\20\2>A\5\30\r\2?A\5\32\16\2@\65\3\2\2"+
+		"\2@\66\3\2\2\2@\67\3\2\2\2@8\3\2\2\2@9\3\2\2\2@:\3\2\2\2@;\3\2\2\2@<\3"+
+		"\2\2\2@=\3\2\2\2@>\3\2\2\2@?\3\2\2\2A\7\3\2\2\2BC\7\27\2\2CD\5$\23\2D"+
+		"\t\3\2\2\2EF\7\30\2\2FG\7 \2\2GH\7\3\2\2HI\5\"\22\2IJ\7\4\2\2JK\7\5\2"+
+		"\2KL\7\'\2\2LO\5\4\3\2MP\7!\2\2NP\3\2\2\2OM\3\2\2\2ON\3\2\2\2PQ\3\2\2"+
+		"\2QR\5\b\5\2RS\7!\2\2ST\7(\2\2T\13\3\2\2\2UV\7 \2\2VW\7\3\2\2WX\5$\23"+
+		"\2XY\7\4\2\2Y\r\3\2\2\2Z[\5\"\22\2[b\7\6\2\2\\c\7 \2\2]c\5(\25\2^c\5\20"+
+		"\t\2_c\5\22\n\2`c\5\24\13\2ac\5\f\7\2b\\\3\2\2\2b]\3\2\2\2b^\3\2\2\2b"+
+		"_\3\2\2\2b`\3\2\2\2ba\3\2\2\2c\17\3\2\2\2de\t\2\2\2ef\t\3\2\2fg\t\2\2"+
+		"\2g\21\3\2\2\2hi\t\2\2\2ij\t\4\2\2jk\t\2\2\2k\23\3\2\2\2lp\7 \2\2mp\7"+
+		"\21\2\2np\5\22\n\2ol\3\2\2\2om\3\2\2\2on\3\2\2\2pq\3\2\2\2qu\t\5\2\2r"+
+		"v\7 \2\2sv\7\21\2\2tv\5\22\n\2ur\3\2\2\2us\3\2\2\2ut\3\2\2\2v~\3\2\2\2"+
+		"w{\7\37\2\2x|\7 \2\2y|\7\21\2\2z|\5\22\n\2{x\3\2\2\2{y\3\2\2\2{z\3\2\2"+
+		"\2|~\3\2\2\2}o\3\2\2\2}w\3\2\2\2~\25\3\2\2\2\177\u0080\7\32\2\2\u0080"+
+		"\u0081\5$\23\2\u0081\27\3\2\2\2\u0082\u0083\7\22\2\2\u0083\31\3\2\2\2"+
+		"\u0084\u0085\7\23\2\2\u0085\33\3\2\2\2\u0086\u0087\7\24\2\2\u0087\u0088"+
+		"\5&\24\2\u0088\u0089\7\5\2\2\u0089\u008a\7\'\2\2\u008a\u008b\5\4\3\2\u008b"+
+		"\u0095\7(\2\2\u008c\u008d\7\25\2\2\u008d\u008e\5&\24\2\u008e\u008f\7\5"+
+		"\2\2\u008f\u0090\7\'\2\2\u0090\u0091\5\4\3\2\u0091\u0092\7(\2\2\u0092"+
+		"\u0094\3\2\2\2\u0093\u008c\3\2\2\2\u0094\u0097\3\2\2\2\u0095\u0093\3\2"+
+		"\2\2\u0095\u0096\3\2\2\2\u0096\u009e\3\2\2\2\u0097\u0095\3\2\2\2\u0098"+
+		"\u0099\7\26\2\2\u0099\u009a\7\5\2\2\u009a\u009b\7\'\2\2\u009b\u009c\5"+
+		"\4\3\2\u009c\u009d\7(\2\2\u009d\u009f\3\2\2\2\u009e\u0098\3\2\2\2\u009e"+
+		"\u009f\3\2\2\2\u009f\35\3\2\2\2\u00a0\u00a1\7\31\2\2\u00a1\u00a2\5&\24"+
+		"\2\u00a2\u00a3\7\5\2\2\u00a3\u00a4\7\'\2\2\u00a4\u00a5\5\4\3\2\u00a5\u00a6"+
+		"\7(\2\2\u00a6\37\3\2\2\2\u00a7\u00aa\7 \2\2\u00a8\u00aa\5(\25\2\u00a9"+
+		"\u00a7\3\2\2\2\u00a9\u00a8\3\2\2\2\u00aa!\3\2\2\2\u00ab\u00ac\7\20\2\2"+
+		"\u00ac\u00b1\5\"\22\2\u00ad\u00ae\7 \2\2\u00ae\u00b1\5\"\22\2\u00af\u00b1"+
+		"\3\2\2\2\u00b0\u00ab\3\2\2\2\u00b0\u00ad\3\2\2\2\u00b0\u00af\3\2\2\2\u00b1"+
+		"#\3\2\2\2\u00b2\u00b3\7\20\2\2\u00b3\u00b9\5$\23\2\u00b4\u00b5\5 \21\2"+
+		"\u00b5\u00b6\5$\23\2\u00b6\u00b9\3\2\2\2\u00b7\u00b9\3\2\2\2\u00b8\u00b2"+
+		"\3\2\2\2\u00b8\u00b4\3\2\2\2\u00b8\u00b7\3\2\2\2\u00b9%\3\2\2\2\u00ba"+
+		"\u00bf\7 \2\2\u00bb\u00bf\7\21\2\2\u00bc\u00bf\5\22\n\2\u00bd\u00bf\5"+
+		"\24\13\2\u00be\u00ba\3\2\2\2\u00be\u00bb\3\2\2\2\u00be\u00bc\3\2\2\2\u00be"+
+		"\u00bd\3\2\2\2\u00bf\'\3\2\2\2\u00c0\u00c1\t\6\2\2\u00c1)\3\2\2\2\20\63"+
+		"@Obou{}\u0095\u009e\u00a9\u00b0\u00b8\u00be";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

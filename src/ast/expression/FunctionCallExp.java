@@ -1,15 +1,14 @@
 package ast.expression;
 
-import ast.component.ValueHolder;
-import ast.component.Variable;
-import ast.leaf.Argument;
+import ast.wrapper.ValueHolder;
+import ast.wrapper.Variable;
+import ast.wrapper.Argument;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
 import cesk.Val;
 import cesk.ValueType;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /*
@@ -39,23 +38,7 @@ public class FunctionCallExp extends Expression implements ValueHolder, Variable
 
     @Override
     public Val eval(State st) {
-        // push new frame
-        st.interrupt(this, this.get_name(), this.arg_list);
-
-        // eval function
-        while(true) {
-            Expression exp = st.next();
-            if (exp != null)
-                exp.eval(st);
-            else
-                break;
-        }
-        FunctionExp func_def = (FunctionExp) st.environment.lookup(null, this.get_name()).var;
-        Val result = func_def.ret_cmp.eval(st);
-
-        // pop old frame and cont.
-        st.kont();
-        return result;
+        return null;
     }
 
     @Override

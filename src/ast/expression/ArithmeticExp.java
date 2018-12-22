@@ -1,8 +1,7 @@
 package ast.expression;
 
-import ast.component.Computable;
-import ast.component.ValueHolder;
-import ast.leaf.IdentifierNode;
+import ast.wrapper.Computable;
+import ast.wrapper.ValueHolder;
 import ast.visitor.PsythonVisitor;
 import cesk.*;
 

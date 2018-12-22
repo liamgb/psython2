@@ -1,9 +1,7 @@
 package ast.expression;
 
+import ast.wrapper.Evaluable;
 import ast.visitor.PsythonVisitor;
-import cesk.State;
-import cesk.SymbolTable;
-import cesk.Val;
 
 /*
     expression
@@ -18,11 +16,9 @@ import cesk.Val;
     |	while
     ;
 */
-public abstract class Expression {
-    public int indent_lvl = 0;
-    public ExpressionList block = null;
-
+public abstract class Expression implements Evaluable {
     public abstract void accept(PsythonVisitor v);
 
-    public abstract Val eval(State st);
+//    public abstract Val eval(State st);
+//    public abstract Val echo(State st);
 }

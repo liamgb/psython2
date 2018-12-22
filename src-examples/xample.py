@@ -25,3 +25,6 @@ c = func(a, b)
 while a >= b:
     b = b + a
     c = a + c
+
+seedr()
+nextr()

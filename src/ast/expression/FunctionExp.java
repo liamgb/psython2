@@ -1,7 +1,7 @@
 package ast.expression;
 
 import ast.component.ReturnCmp;
-import ast.component.Variable;
+import ast.wrapper.Variable;
 import ast.leaf.IdentifierNode;
 import ast.visitor.PsythonVisitor;
 import cesk.State;
@@ -23,6 +23,7 @@ public class FunctionExp extends Expression implements Variable {
     public List<IdentifierNode> func_args = new ArrayList<>();
     public ExpressionList func_body;
     public ReturnCmp ret_cmp;
+    public TailExp tail = new TailExp();
 
     public FunctionExp(IdentifierNode func_id, List<IdentifierNode> func_args,
                        ExpressionList expl, ReturnCmp ret_cmp) {
@@ -41,6 +42,7 @@ public class FunctionExp extends Expression implements Variable {
         }
         func_body.accept(v);
         ret_cmp.accept(v);
+        tail.accept(v);
     }
 
     @Override

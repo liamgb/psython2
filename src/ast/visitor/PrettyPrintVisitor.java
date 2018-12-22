@@ -96,6 +96,21 @@ public class PrettyPrintVisitor implements PsythonVisitor {
         result.append(stringNode.str + "\n");
     }
 
+    @Override
+    public void visit(NextRandExp nextRandExp) {
+        result.append("nextRandExp:\n");
+    }
+
+    @Override
+    public void visit(SeedRandExp seedRandExp) {
+        result.append("seedRandExp:\n");
+    }
+
+
+    @Override
+    public void visit(TailExp tail_exp){
+
+    }
 
 //    @Override
 //    public void visit(Expression item) {
