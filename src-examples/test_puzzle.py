@@ -60,6 +60,7 @@ def gen_action():
 
     return move
 
+
 i = 0
 while i < 7:
     i = i + 1
