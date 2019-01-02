@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b89ddb79-7221-4e78-9292-05df6ea94f8e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/psython2_jar/psython2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-examples/psthon_examples.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/psthon_examples.sublime-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-examples/test_puzzle.py" beforeDir="false" afterPath="$PROJECT_DIR$/src-examples/test_puzzle.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,8 +68,8 @@
       <file leaf-file-name="RegularChecker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+            <state relative-caret-position="442">
+              <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -226,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -239,25 +235,6 @@
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
               <item name="psython2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="psython2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modelchecking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="psython2" type="b2602c69:ProjectViewProjectNode" />
@@ -275,6 +252,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -507,13 +485,12 @@
       <workItem from="1544656107275" duration="48814000" />
       <workItem from="1545331048403" duration="40997000" />
       <workItem from="1545843495182" duration="695000" />
+      <workItem from="1546396191781" duration="9000" />
+      <workItem from="1546396933405" duration="71000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 12h 57m 11s.xml">
-      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RegularChecker_testProgram2 - 2018.12.22 at 13h 00m 18s.xml">
       <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
@@ -541,9 +518,12 @@
     <history-entry file="RegularChecker_testProgram2 - 2018.12.26 at 09h 58m 52s.xml">
       <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RegularChecker_testProgram2 - 2019.01.01 at 19h 42m 42s.xml">
+      <configuration name="RegularChecker.testProgram2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287340000" />
+    <option name="totallyTimeSpent" value="287420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-7" width="1229" height="735" extended-state="6" />
@@ -567,9 +547,9 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.51607716" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20096463" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24938272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24938272" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -1008,8 +988,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src-test/modelchecker/RegularChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+        <state relative-caret-position="442">
+          <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
         </state>
       </provider>
     </entry>
